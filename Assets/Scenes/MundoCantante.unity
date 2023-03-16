@@ -124,22 +124,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 0a4d99bb0dd054f4bbb320b72c5bf198, type: 2}
---- !u!114 &254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373871681117018864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 3fe8915ede8bbf140bac376c2e8c0fe8, type: 2}
 --- !u!1 &386149
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,7 +2609,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &247235604
 GameObject:
@@ -2737,8 +2721,6 @@ GameObject:
   - component: {fileID: 258457291}
   - component: {fileID: 258457290}
   - component: {fileID: 258457289}
-  - component: {fileID: 258457288}
-  - component: {fileID: 258457287}
   - component: {fileID: 258457286}
   m_Layer: 0
   m_Name: Publico (1)
@@ -2775,40 +2757,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &258457287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258457284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"title":"Behavior","summary":null,"pan":{"x":-56.96898,"y":-115.5417},"zoom":1.0,"elements":[{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Butacas","summary":"Siempre est\u00e1 en butacas hasta que se caiga la luz","pan":{"x":89.26997,"y":-21.94913},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-150.0},"guid":"fe8df2be-82d9-4a96-95b5-ca3db8f3cb69","$version":"A","$type":"Bolt.OnEnterState","$id":"14"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-156.0},"guid":"5f59e7e8-b9a0-49f8-afb7-1f2cc99914e8","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":-13.0},"guid":"d56e1ed9-7373-4b53-8321-94672bf28b09","$version":"A","$type":"Bolt.GetMember","$id":"19"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyButacas","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":-17.0},"guid":"3162caf2-0576-452e-99b0-231a040ae2cf","$version":"A","$type":"Bolt.GetVariable","$id":"22"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"6e675dab-4723-4418-ae8e-f3e2a9a509a0","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"target","guid":"c655b69f-6ee2-4a9d-b00a-67150e2e2a58","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"%target","guid":"2140e53f-de72-4336-b2be-20bfc2d0d8b2","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":true,"position":{"x":-300.0,"y":-153.0},"width":170.0,"guid":"b9ac9700-24ca-4954-9ed2-23ab8fc9e46f","$version":"A","$type":"Bolt.FlowState","$id":"4"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Vest\u00edbulo","summary":"Cuando se arregle la luz vuelve a las butacas\n","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-116.0},"guid":"ff63dcd1-af0a-4df6-88e2-04ffca2e0b2d","$version":"A","$type":"Bolt.OnEnterState","$id":"37"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-122.0},"guid":"97b9d8dc-6578-4bcf-be77-5517f4f4c282","$version":"A","$type":"Bolt.InvokeMember","$id":"39"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":22.0},"guid":"6a35cce7-dbb4-46df-b42b-a15c53294ce6","$version":"A","$type":"Bolt.GetMember","$id":"42"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyVestibulo","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":18.0},"guid":"d9c7368c-7bb2-4c0b-ada9-06a204ecf90e","$version":"A","$type":"Bolt.GetVariable","$id":"45"},{"sourceUnit":{"$ref":"37"},"sourceKey":"trigger","destinationUnit":{"$ref":"39"},"destinationKey":"enter","guid":"74b5c911-71ae-4d1c-887a-9257f4744690","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"42"},"sourceKey":"value","destinationUnit":{"$ref":"39"},"destinationKey":"%target","guid":"fd362561-ca8e-4662-8fcd-81cb5b09131a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"45"},"sourceKey":"value","destinationUnit":{"$ref":"42"},"destinationKey":"target","guid":"6997f62a-bf1f-4959-866d-6b25726c9755","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":false,"position":{"x":111.0,"y":-155.0},"width":170.0,"guid":"c9977adb-80d4-445e-abbb-ab37b5b25211","$version":"A","$type":"Bolt.FlowState","$id":"27"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":1.865565,"y":-57.41249},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":253.0,"y":-26.0},"guid":"90ba83ae-d846-4bf9-bbf2-8154a7328282","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"60"},{"coroutine":false,"defaultValues":{},"position":{"x":-455.0,"y":-41.0},"guid":"3504b799-28c3-4edd-b0d2-d36cf3dd0ef9","$version":"A","$type":"Bolt.Update","$id":"62"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-196.0,"y":-43.0},"guid":"595eb3d3-b4bf-4e88-81e4-f0db3bdabdd1","$version":"A","$type":"Bolt.InvokeMember","$id":"64"},{"defaultValues":{},"position":{"x":41.0,"y":-42.0},"guid":"92772125-72bc-4052-875d-c9a1dedde2ff","$version":"A","$type":"Bolt.Branch","$id":"67"},{"sourceUnit":{"$ref":"67"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"60"},"destinationKey":"trigger","guid":"1e0a0e8e-c729-4c79-b486-4b9cdb778add","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"62"},"sourceKey":"trigger","destinationUnit":{"$ref":"64"},"destinationKey":"enter","guid":"bcd0c904-ef7f-4a4b-aba4-6d635002524a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"exit","destinationUnit":{"$ref":"67"},"destinationKey":"enter","guid":"59ccf727-750a-4787-8638-b1738f01dc5c","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"result","destinationUnit":{"$ref":"67"},"destinationKey":"condition","guid":"2461b6b0-b26c-4682-830a-ec422d45b425","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"4"},"destination":{"$ref":"27"},"guid":"4c8c4da5-279b-48a0-a8e5-dfee6bcda5ac","$version":"A","$type":"Bolt.FlowStateTransition"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":2.852303,"y":20.25716},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":290.0,"y":-81.0},"guid":"251084d5-af24-4df7-aa0b-75c55b277ab7","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"83"},{"coroutine":false,"defaultValues":{},"position":{"x":-422.0,"y":-80.0},"guid":"074be8d4-c54c-4741-a7a7-1007be4b8fa2","$version":"A","$type":"Bolt.Update","$id":"85"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-163.0,"y":-82.0},"guid":"9dd9650b-0604-4e28-9b2a-c5af9f856349","$version":"A","$type":"Bolt.InvokeMember","$id":"87"},{"defaultValues":{},"position":{"x":74.0,"y":-81.0},"guid":"c0f5fe05-e675-4770-8af1-1cbd538dac73","$version":"A","$type":"Bolt.Branch","$id":"90"},{"sourceUnit":{"$ref":"90"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"83"},"destinationKey":"trigger","guid":"5b6c7056-d553-4fa4-82e7-5c107b67a11a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"85"},"sourceKey":"trigger","destinationUnit":{"$ref":"87"},"destinationKey":"enter","guid":"c4560fac-fe7e-4e88-9756-2f5d7ade333d","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"exit","destinationUnit":{"$ref":"90"},"destinationKey":"enter","guid":"a546f820-0304-4ecc-a41c-5e0cd707bcc3","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"result","destinationUnit":{"$ref":"90"},"destinationKey":"condition","guid":"2eb06bbe-3fca-423b-8d28-0bfc0b60a12b","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"27"},"destination":{"$ref":"4"},"guid":"6a230a51-0d64-4414-a53e-7baacb2e3903","$version":"A","$type":"Bolt.FlowStateTransition"}],"$version":"A"}}}'
-    _objectReferences: []
---- !u!114 &258457288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258457284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"EmptyButacas","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EmptyVestibulo","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 1957017323}
-    - {fileID: 1109291994}
 --- !u!136 &258457289
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3751,7 +3699,7 @@ RectTransform:
   m_Children:
   - {fileID: 386026116}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3906,8 +3854,6 @@ GameObject:
   - component: {fileID: 406756858}
   - component: {fileID: 406756857}
   - component: {fileID: 406756856}
-  - component: {fileID: 406756855}
-  - component: {fileID: 406756854}
   - component: {fileID: 406756853}
   m_Layer: 0
   m_Name: Publico (4)
@@ -3944,40 +3890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &406756854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406756851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"title":"Behavior","summary":null,"pan":{"x":-29.96898,"y":-44.5417},"zoom":1.0,"elements":[{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Butacas","summary":"Siempre est\u00e1 en butacas hasta que se caiga la luz","pan":{"x":50.10963,"y":-76.0431},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-357.0,"y":-156.0},"guid":"fe8df2be-82d9-4a96-95b5-ca3db8f3cb69","$version":"A","$type":"Bolt.OnEnterState","$id":"14"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-156.0},"guid":"5f59e7e8-b9a0-49f8-afb7-1f2cc99914e8","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":-13.0},"guid":"d56e1ed9-7373-4b53-8321-94672bf28b09","$version":"A","$type":"Bolt.GetMember","$id":"19"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyButacas","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":-17.0},"guid":"3162caf2-0576-452e-99b0-231a040ae2cf","$version":"A","$type":"Bolt.GetVariable","$id":"22"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"6e675dab-4723-4418-ae8e-f3e2a9a509a0","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"target","guid":"c655b69f-6ee2-4a9d-b00a-67150e2e2a58","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"%target","guid":"2140e53f-de72-4336-b2be-20bfc2d0d8b2","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":true,"position":{"x":-300.0,"y":-153.0},"width":170.0,"guid":"b9ac9700-24ca-4954-9ed2-23ab8fc9e46f","$version":"A","$type":"Bolt.FlowState","$id":"4"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Vest\u00edbulo","summary":"Cuando se arregle la luz vuelve a las butacas\n","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-116.0},"guid":"ff63dcd1-af0a-4df6-88e2-04ffca2e0b2d","$version":"A","$type":"Bolt.OnEnterState","$id":"37"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-122.0},"guid":"97b9d8dc-6578-4bcf-be77-5517f4f4c282","$version":"A","$type":"Bolt.InvokeMember","$id":"39"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":22.0},"guid":"6a35cce7-dbb4-46df-b42b-a15c53294ce6","$version":"A","$type":"Bolt.GetMember","$id":"42"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyVestibulo","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":18.0},"guid":"d9c7368c-7bb2-4c0b-ada9-06a204ecf90e","$version":"A","$type":"Bolt.GetVariable","$id":"45"},{"sourceUnit":{"$ref":"37"},"sourceKey":"trigger","destinationUnit":{"$ref":"39"},"destinationKey":"enter","guid":"74b5c911-71ae-4d1c-887a-9257f4744690","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"42"},"sourceKey":"value","destinationUnit":{"$ref":"39"},"destinationKey":"%target","guid":"fd362561-ca8e-4662-8fcd-81cb5b09131a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"45"},"sourceKey":"value","destinationUnit":{"$ref":"42"},"destinationKey":"target","guid":"6997f62a-bf1f-4959-866d-6b25726c9755","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":false,"position":{"x":111.0,"y":-155.0},"width":170.0,"guid":"c9977adb-80d4-445e-abbb-ab37b5b25211","$version":"A","$type":"Bolt.FlowState","$id":"27"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":237.0,"y":-23.67751},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":253.0,"y":-26.0},"guid":"90ba83ae-d846-4bf9-bbf2-8154a7328282","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"60"},{"coroutine":false,"defaultValues":{},"position":{"x":-455.0,"y":-41.0},"guid":"3504b799-28c3-4edd-b0d2-d36cf3dd0ef9","$version":"A","$type":"Bolt.Update","$id":"62"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-196.0,"y":-43.0},"guid":"595eb3d3-b4bf-4e88-81e4-f0db3bdabdd1","$version":"A","$type":"Bolt.InvokeMember","$id":"64"},{"defaultValues":{},"position":{"x":41.0,"y":-42.0},"guid":"92772125-72bc-4052-875d-c9a1dedde2ff","$version":"A","$type":"Bolt.Branch","$id":"67"},{"sourceUnit":{"$ref":"67"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"60"},"destinationKey":"trigger","guid":"1e0a0e8e-c729-4c79-b486-4b9cdb778add","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"62"},"sourceKey":"trigger","destinationUnit":{"$ref":"64"},"destinationKey":"enter","guid":"82f432ec-9015-406b-943e-6b7a3d60478a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"exit","destinationUnit":{"$ref":"67"},"destinationKey":"enter","guid":"478553c3-6ff4-4387-b338-b9f1734b5a56","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"result","destinationUnit":{"$ref":"67"},"destinationKey":"condition","guid":"18b5618c-4595-41f0-ab36-68d03b611f4f","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"4"},"destination":{"$ref":"27"},"guid":"4c8c4da5-279b-48a0-a8e5-dfee6bcda5ac","$version":"A","$type":"Bolt.FlowStateTransition"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-108.1477,"y":46.25716},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":290.0,"y":-81.0},"guid":"251084d5-af24-4df7-aa0b-75c55b277ab7","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"83"},{"coroutine":false,"defaultValues":{},"position":{"x":-422.0,"y":-80.0},"guid":"074be8d4-c54c-4741-a7a7-1007be4b8fa2","$version":"A","$type":"Bolt.Update","$id":"85"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-163.0,"y":-82.0},"guid":"9dd9650b-0604-4e28-9b2a-c5af9f856349","$version":"A","$type":"Bolt.InvokeMember","$id":"87"},{"defaultValues":{},"position":{"x":74.0,"y":-81.0},"guid":"c0f5fe05-e675-4770-8af1-1cbd538dac73","$version":"A","$type":"Bolt.Branch","$id":"90"},{"sourceUnit":{"$ref":"90"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"83"},"destinationKey":"trigger","guid":"5b6c7056-d553-4fa4-82e7-5c107b67a11a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"85"},"sourceKey":"trigger","destinationUnit":{"$ref":"87"},"destinationKey":"enter","guid":"e4073aba-604a-47de-a671-f41e9699c0f4","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"exit","destinationUnit":{"$ref":"90"},"destinationKey":"enter","guid":"d8851416-9baf-403e-a308-d8d83ad4ff28","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"result","destinationUnit":{"$ref":"90"},"destinationKey":"condition","guid":"86a4b235-8b3c-4e22-a7fc-62b1f0223b08","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"27"},"destination":{"$ref":"4"},"guid":"6a230a51-0d64-4414-a53e-7baacb2e3903","$version":"A","$type":"Bolt.FlowStateTransition"}],"$version":"A"}}}'
-    _objectReferences: []
---- !u!114 &406756855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406756851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"EmptyButacas","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EmptyVestibulo","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 1341835723}
-    - {fileID: 29804945}
 --- !u!136 &406756856
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4546,7 +4458,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &485846056
 MonoBehaviour:
@@ -5155,7 +5067,7 @@ PrefabInstance:
     - target: {fileID: 3786157626859481274, guid: 2d40d536fdfba6e41ae33c91e49f52b1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3786157626859481274, guid: 2d40d536fdfba6e41ae33c91e49f52b1,
         type: 3}
@@ -5445,8 +5357,6 @@ GameObject:
   - component: {fileID: 565968666}
   - component: {fileID: 565968665}
   - component: {fileID: 565968664}
-  - component: {fileID: 565968663}
-  - component: {fileID: 565968662}
   - component: {fileID: 565968661}
   m_Layer: 0
   m_Name: Publico (6)
@@ -5483,40 +5393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &565968662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565968659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"title":"Behavior","summary":null,"pan":{"x":-56.96898,"y":-115.5417},"zoom":1.0,"elements":[{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Butacas","summary":"Siempre est\u00e1 en butacas hasta que se caiga la luz","pan":{"x":89.26997,"y":-21.94913},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-150.0},"guid":"fe8df2be-82d9-4a96-95b5-ca3db8f3cb69","$version":"A","$type":"Bolt.OnEnterState","$id":"14"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-156.0},"guid":"5f59e7e8-b9a0-49f8-afb7-1f2cc99914e8","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":-13.0},"guid":"d56e1ed9-7373-4b53-8321-94672bf28b09","$version":"A","$type":"Bolt.GetMember","$id":"19"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyButacas","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":-17.0},"guid":"3162caf2-0576-452e-99b0-231a040ae2cf","$version":"A","$type":"Bolt.GetVariable","$id":"22"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"6e675dab-4723-4418-ae8e-f3e2a9a509a0","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"target","guid":"c655b69f-6ee2-4a9d-b00a-67150e2e2a58","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"%target","guid":"2140e53f-de72-4336-b2be-20bfc2d0d8b2","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":true,"position":{"x":-300.0,"y":-153.0},"width":170.0,"guid":"b9ac9700-24ca-4954-9ed2-23ab8fc9e46f","$version":"A","$type":"Bolt.FlowState","$id":"4"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Vest\u00edbulo","summary":"Cuando se arregle la luz vuelve a las butacas\n","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-116.0},"guid":"ff63dcd1-af0a-4df6-88e2-04ffca2e0b2d","$version":"A","$type":"Bolt.OnEnterState","$id":"37"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-122.0},"guid":"97b9d8dc-6578-4bcf-be77-5517f4f4c282","$version":"A","$type":"Bolt.InvokeMember","$id":"39"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":22.0},"guid":"6a35cce7-dbb4-46df-b42b-a15c53294ce6","$version":"A","$type":"Bolt.GetMember","$id":"42"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyVestibulo","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":18.0},"guid":"d9c7368c-7bb2-4c0b-ada9-06a204ecf90e","$version":"A","$type":"Bolt.GetVariable","$id":"45"},{"sourceUnit":{"$ref":"37"},"sourceKey":"trigger","destinationUnit":{"$ref":"39"},"destinationKey":"enter","guid":"74b5c911-71ae-4d1c-887a-9257f4744690","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"42"},"sourceKey":"value","destinationUnit":{"$ref":"39"},"destinationKey":"%target","guid":"fd362561-ca8e-4662-8fcd-81cb5b09131a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"45"},"sourceKey":"value","destinationUnit":{"$ref":"42"},"destinationKey":"target","guid":"6997f62a-bf1f-4959-866d-6b25726c9755","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":false,"position":{"x":111.0,"y":-155.0},"width":170.0,"guid":"c9977adb-80d4-445e-abbb-ab37b5b25211","$version":"A","$type":"Bolt.FlowState","$id":"27"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":-196.6775},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":253.0,"y":-26.0},"guid":"90ba83ae-d846-4bf9-bbf2-8154a7328282","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"60"},{"coroutine":false,"defaultValues":{},"position":{"x":-455.0,"y":-41.0},"guid":"3504b799-28c3-4edd-b0d2-d36cf3dd0ef9","$version":"A","$type":"Bolt.Update","$id":"62"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-196.0,"y":-43.0},"guid":"595eb3d3-b4bf-4e88-81e4-f0db3bdabdd1","$version":"A","$type":"Bolt.InvokeMember","$id":"64"},{"defaultValues":{},"position":{"x":41.0,"y":-42.0},"guid":"92772125-72bc-4052-875d-c9a1dedde2ff","$version":"A","$type":"Bolt.Branch","$id":"67"},{"sourceUnit":{"$ref":"67"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"60"},"destinationKey":"trigger","guid":"1e0a0e8e-c729-4c79-b486-4b9cdb778add","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"62"},"sourceKey":"trigger","destinationUnit":{"$ref":"64"},"destinationKey":"enter","guid":"a3762d98-4fad-420c-b63c-6911a17f3582","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"exit","destinationUnit":{"$ref":"67"},"destinationKey":"enter","guid":"eb1e7055-1cf2-4a91-8fe8-a534f74a6e52","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"result","destinationUnit":{"$ref":"67"},"destinationKey":"condition","guid":"e1ed8b0e-94ce-4f93-944c-f00241ac4caf","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"4"},"destination":{"$ref":"27"},"guid":"4c8c4da5-279b-48a0-a8e5-dfee6bcda5ac","$version":"A","$type":"Bolt.FlowStateTransition"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-108.1477,"y":46.25716},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":290.0,"y":-81.0},"guid":"251084d5-af24-4df7-aa0b-75c55b277ab7","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"83"},{"coroutine":false,"defaultValues":{},"position":{"x":-422.0,"y":-80.0},"guid":"074be8d4-c54c-4741-a7a7-1007be4b8fa2","$version":"A","$type":"Bolt.Update","$id":"85"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-163.0,"y":-82.0},"guid":"9dd9650b-0604-4e28-9b2a-c5af9f856349","$version":"A","$type":"Bolt.InvokeMember","$id":"87"},{"defaultValues":{},"position":{"x":74.0,"y":-81.0},"guid":"c0f5fe05-e675-4770-8af1-1cbd538dac73","$version":"A","$type":"Bolt.Branch","$id":"90"},{"sourceUnit":{"$ref":"90"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"83"},"destinationKey":"trigger","guid":"5b6c7056-d553-4fa4-82e7-5c107b67a11a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"85"},"sourceKey":"trigger","destinationUnit":{"$ref":"87"},"destinationKey":"enter","guid":"65c6a35d-6a20-4588-81d2-59c208c9d7c5","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"exit","destinationUnit":{"$ref":"90"},"destinationKey":"enter","guid":"c517f20d-8a1b-4391-9257-250088830074","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"result","destinationUnit":{"$ref":"90"},"destinationKey":"condition","guid":"a64d0c17-dacd-403a-99ce-654bb7eb1e6f","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"27"},"destination":{"$ref":"4"},"guid":"6a230a51-0d64-4414-a53e-7baacb2e3903","$version":"A","$type":"Bolt.FlowStateTransition"}],"$version":"A"}}}'
-    _objectReferences: []
---- !u!114 &565968663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565968659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"EmptyButacas","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EmptyVestibulo","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 1184022916}
-    - {fileID: 637593796}
 --- !u!136 &565968664
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6059,7 +5935,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &629445170
 GameObject:
@@ -6530,8 +6406,6 @@ GameObject:
   - component: {fileID: 697826485}
   - component: {fileID: 697826484}
   - component: {fileID: 697826483}
-  - component: {fileID: 697826482}
-  - component: {fileID: 697826481}
   - component: {fileID: 697826480}
   m_Layer: 0
   m_Name: Publico (2)
@@ -6568,40 +6442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &697826481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697826478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"title":"Behavior","summary":null,"pan":{"x":-56.96898,"y":-115.5417},"zoom":1.0,"elements":[{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Butacas","summary":"Siempre est\u00e1 en butacas hasta que se caiga la luz","pan":{"x":89.26997,"y":-21.94913},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-150.0},"guid":"fe8df2be-82d9-4a96-95b5-ca3db8f3cb69","$version":"A","$type":"Bolt.OnEnterState","$id":"14"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-156.0},"guid":"5f59e7e8-b9a0-49f8-afb7-1f2cc99914e8","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":-13.0},"guid":"d56e1ed9-7373-4b53-8321-94672bf28b09","$version":"A","$type":"Bolt.GetMember","$id":"19"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyButacas","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":-17.0},"guid":"3162caf2-0576-452e-99b0-231a040ae2cf","$version":"A","$type":"Bolt.GetVariable","$id":"22"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"6e675dab-4723-4418-ae8e-f3e2a9a509a0","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"target","guid":"c655b69f-6ee2-4a9d-b00a-67150e2e2a58","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"%target","guid":"2140e53f-de72-4336-b2be-20bfc2d0d8b2","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":true,"position":{"x":-300.0,"y":-153.0},"width":170.0,"guid":"b9ac9700-24ca-4954-9ed2-23ab8fc9e46f","$version":"A","$type":"Bolt.FlowState","$id":"4"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Vest\u00edbulo","summary":"Cuando se arregle la luz vuelve a las butacas\n","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-116.0},"guid":"ff63dcd1-af0a-4df6-88e2-04ffca2e0b2d","$version":"A","$type":"Bolt.OnEnterState","$id":"37"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-122.0},"guid":"97b9d8dc-6578-4bcf-be77-5517f4f4c282","$version":"A","$type":"Bolt.InvokeMember","$id":"39"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":22.0},"guid":"6a35cce7-dbb4-46df-b42b-a15c53294ce6","$version":"A","$type":"Bolt.GetMember","$id":"42"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyVestibulo","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":18.0},"guid":"d9c7368c-7bb2-4c0b-ada9-06a204ecf90e","$version":"A","$type":"Bolt.GetVariable","$id":"45"},{"sourceUnit":{"$ref":"37"},"sourceKey":"trigger","destinationUnit":{"$ref":"39"},"destinationKey":"enter","guid":"74b5c911-71ae-4d1c-887a-9257f4744690","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"42"},"sourceKey":"value","destinationUnit":{"$ref":"39"},"destinationKey":"%target","guid":"fd362561-ca8e-4662-8fcd-81cb5b09131a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"45"},"sourceKey":"value","destinationUnit":{"$ref":"42"},"destinationKey":"target","guid":"6997f62a-bf1f-4959-866d-6b25726c9755","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":false,"position":{"x":111.0,"y":-155.0},"width":170.0,"guid":"c9977adb-80d4-445e-abbb-ab37b5b25211","$version":"A","$type":"Bolt.FlowState","$id":"27"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":-196.6775},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":253.0,"y":-26.0},"guid":"90ba83ae-d846-4bf9-bbf2-8154a7328282","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"60"},{"coroutine":false,"defaultValues":{},"position":{"x":-455.0,"y":-41.0},"guid":"3504b799-28c3-4edd-b0d2-d36cf3dd0ef9","$version":"A","$type":"Bolt.Update","$id":"62"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-196.0,"y":-43.0},"guid":"595eb3d3-b4bf-4e88-81e4-f0db3bdabdd1","$version":"A","$type":"Bolt.InvokeMember","$id":"64"},{"defaultValues":{},"position":{"x":41.0,"y":-42.0},"guid":"92772125-72bc-4052-875d-c9a1dedde2ff","$version":"A","$type":"Bolt.Branch","$id":"67"},{"sourceUnit":{"$ref":"67"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"60"},"destinationKey":"trigger","guid":"1e0a0e8e-c729-4c79-b486-4b9cdb778add","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"62"},"sourceKey":"trigger","destinationUnit":{"$ref":"64"},"destinationKey":"enter","guid":"c8f2756b-8653-46e8-937c-355f464f3f15","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"exit","destinationUnit":{"$ref":"67"},"destinationKey":"enter","guid":"6d1d67f3-0e2a-452f-8ed5-5f819af81ad2","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"result","destinationUnit":{"$ref":"67"},"destinationKey":"condition","guid":"8904c636-928e-4345-b022-89916057f71a","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"4"},"destination":{"$ref":"27"},"guid":"4c8c4da5-279b-48a0-a8e5-dfee6bcda5ac","$version":"A","$type":"Bolt.FlowStateTransition"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-108.1477,"y":46.25716},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":290.0,"y":-81.0},"guid":"251084d5-af24-4df7-aa0b-75c55b277ab7","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"83"},{"coroutine":false,"defaultValues":{},"position":{"x":-422.0,"y":-80.0},"guid":"074be8d4-c54c-4741-a7a7-1007be4b8fa2","$version":"A","$type":"Bolt.Update","$id":"85"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-163.0,"y":-82.0},"guid":"9dd9650b-0604-4e28-9b2a-c5af9f856349","$version":"A","$type":"Bolt.InvokeMember","$id":"87"},{"defaultValues":{},"position":{"x":74.0,"y":-81.0},"guid":"c0f5fe05-e675-4770-8af1-1cbd538dac73","$version":"A","$type":"Bolt.Branch","$id":"90"},{"sourceUnit":{"$ref":"90"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"83"},"destinationKey":"trigger","guid":"5b6c7056-d553-4fa4-82e7-5c107b67a11a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"85"},"sourceKey":"trigger","destinationUnit":{"$ref":"87"},"destinationKey":"enter","guid":"0562b836-545c-49a5-b449-bada193f2c33","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"exit","destinationUnit":{"$ref":"90"},"destinationKey":"enter","guid":"033d51ac-3607-4345-8ff4-30158a15f69e","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"result","destinationUnit":{"$ref":"90"},"destinationKey":"condition","guid":"1ce254e5-9cd5-4dd5-bbee-db8990f85cd3","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"27"},"destination":{"$ref":"4"},"guid":"6a230a51-0d64-4414-a53e-7baacb2e3903","$version":"A","$type":"Bolt.FlowStateTransition"}],"$version":"A"}}}'
-    _objectReferences: []
---- !u!114 &697826482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697826478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"EmptyButacas","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EmptyVestibulo","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 1322167764}
-    - {fileID: 489659621}
 --- !u!136 &697826483
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7015,7 +6855,67 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &759450753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 759450756}
+  - component: {fileID: 759450755}
+  - component: {fileID: 759450754}
+  m_Layer: 0
+  m_Name: VisualScripting SceneVariables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &759450754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759450753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765181c9ef4b24d32a4f7cbd2ef370dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &759450755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759450753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Scene","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!4 &759450756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759450753}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &769054004 stripped
 Transform:
@@ -7482,8 +7382,6 @@ GameObject:
   - component: {fileID: 825326286}
   - component: {fileID: 825326285}
   - component: {fileID: 825326284}
-  - component: {fileID: 825326283}
-  - component: {fileID: 825326282}
   - component: {fileID: 825326281}
   m_Layer: 0
   m_Name: Publico (3)
@@ -7520,40 +7418,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &825326282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825326279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"title":"Behavior","summary":null,"pan":{"x":-56.96898,"y":-115.5417},"zoom":1.0,"elements":[{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Butacas","summary":"Siempre est\u00e1 en butacas hasta que se caiga la luz","pan":{"x":89.26997,"y":-21.94913},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-150.0},"guid":"fe8df2be-82d9-4a96-95b5-ca3db8f3cb69","$version":"A","$type":"Bolt.OnEnterState","$id":"14"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-156.0},"guid":"5f59e7e8-b9a0-49f8-afb7-1f2cc99914e8","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":-13.0},"guid":"d56e1ed9-7373-4b53-8321-94672bf28b09","$version":"A","$type":"Bolt.GetMember","$id":"19"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyButacas","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":-17.0},"guid":"3162caf2-0576-452e-99b0-231a040ae2cf","$version":"A","$type":"Bolt.GetVariable","$id":"22"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"6e675dab-4723-4418-ae8e-f3e2a9a509a0","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"target","guid":"c655b69f-6ee2-4a9d-b00a-67150e2e2a58","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"%target","guid":"2140e53f-de72-4336-b2be-20bfc2d0d8b2","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":true,"position":{"x":-300.0,"y":-153.0},"width":170.0,"guid":"b9ac9700-24ca-4954-9ed2-23ab8fc9e46f","$version":"A","$type":"Bolt.FlowState","$id":"4"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Vest\u00edbulo","summary":"Cuando se arregle la luz vuelve a las butacas\n","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-116.0},"guid":"ff63dcd1-af0a-4df6-88e2-04ffca2e0b2d","$version":"A","$type":"Bolt.OnEnterState","$id":"37"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-122.0},"guid":"97b9d8dc-6578-4bcf-be77-5517f4f4c282","$version":"A","$type":"Bolt.InvokeMember","$id":"39"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":22.0},"guid":"6a35cce7-dbb4-46df-b42b-a15c53294ce6","$version":"A","$type":"Bolt.GetMember","$id":"42"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyVestibulo","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":18.0},"guid":"d9c7368c-7bb2-4c0b-ada9-06a204ecf90e","$version":"A","$type":"Bolt.GetVariable","$id":"45"},{"sourceUnit":{"$ref":"37"},"sourceKey":"trigger","destinationUnit":{"$ref":"39"},"destinationKey":"enter","guid":"74b5c911-71ae-4d1c-887a-9257f4744690","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"42"},"sourceKey":"value","destinationUnit":{"$ref":"39"},"destinationKey":"%target","guid":"fd362561-ca8e-4662-8fcd-81cb5b09131a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"45"},"sourceKey":"value","destinationUnit":{"$ref":"42"},"destinationKey":"target","guid":"6997f62a-bf1f-4959-866d-6b25726c9755","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":false,"position":{"x":111.0,"y":-155.0},"width":170.0,"guid":"c9977adb-80d4-445e-abbb-ab37b5b25211","$version":"A","$type":"Bolt.FlowState","$id":"27"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":-196.6775},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":253.0,"y":-26.0},"guid":"90ba83ae-d846-4bf9-bbf2-8154a7328282","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"60"},{"coroutine":false,"defaultValues":{},"position":{"x":-455.0,"y":-41.0},"guid":"3504b799-28c3-4edd-b0d2-d36cf3dd0ef9","$version":"A","$type":"Bolt.Update","$id":"62"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-196.0,"y":-43.0},"guid":"595eb3d3-b4bf-4e88-81e4-f0db3bdabdd1","$version":"A","$type":"Bolt.InvokeMember","$id":"64"},{"defaultValues":{},"position":{"x":41.0,"y":-42.0},"guid":"92772125-72bc-4052-875d-c9a1dedde2ff","$version":"A","$type":"Bolt.Branch","$id":"67"},{"sourceUnit":{"$ref":"67"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"60"},"destinationKey":"trigger","guid":"1e0a0e8e-c729-4c79-b486-4b9cdb778add","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"62"},"sourceKey":"trigger","destinationUnit":{"$ref":"64"},"destinationKey":"enter","guid":"ec9a12f2-e179-43d3-abc7-a4b9466be582","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"exit","destinationUnit":{"$ref":"67"},"destinationKey":"enter","guid":"21dd80ca-9d0f-4bf8-a5e1-f1cf01049b38","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"result","destinationUnit":{"$ref":"67"},"destinationKey":"condition","guid":"c7a0c57b-cbb8-41fd-81a2-085b7f6828c4","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"4"},"destination":{"$ref":"27"},"guid":"4c8c4da5-279b-48a0-a8e5-dfee6bcda5ac","$version":"A","$type":"Bolt.FlowStateTransition"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-108.1477,"y":46.25716},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":290.0,"y":-81.0},"guid":"251084d5-af24-4df7-aa0b-75c55b277ab7","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"83"},{"coroutine":false,"defaultValues":{},"position":{"x":-422.0,"y":-80.0},"guid":"074be8d4-c54c-4741-a7a7-1007be4b8fa2","$version":"A","$type":"Bolt.Update","$id":"85"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-163.0,"y":-82.0},"guid":"9dd9650b-0604-4e28-9b2a-c5af9f856349","$version":"A","$type":"Bolt.InvokeMember","$id":"87"},{"defaultValues":{},"position":{"x":74.0,"y":-81.0},"guid":"c0f5fe05-e675-4770-8af1-1cbd538dac73","$version":"A","$type":"Bolt.Branch","$id":"90"},{"sourceUnit":{"$ref":"90"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"83"},"destinationKey":"trigger","guid":"5b6c7056-d553-4fa4-82e7-5c107b67a11a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"85"},"sourceKey":"trigger","destinationUnit":{"$ref":"87"},"destinationKey":"enter","guid":"4aebbff9-e664-482f-9ed1-18d4eadaab98","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"exit","destinationUnit":{"$ref":"90"},"destinationKey":"enter","guid":"e1d2a156-c841-4f3b-bdfe-529336c3f0e5","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"result","destinationUnit":{"$ref":"90"},"destinationKey":"condition","guid":"e40fd70f-f23b-40c7-a3a2-4d1b38de391e","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"27"},"destination":{"$ref":"4"},"guid":"6a230a51-0d64-4414-a53e-7baacb2e3903","$version":"A","$type":"Bolt.FlowStateTransition"}],"$version":"A"}}}'
-    _objectReferences: []
---- !u!114 &825326283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825326279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"EmptyButacas","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EmptyVestibulo","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 1833399399}
-    - {fileID: 386149}
 --- !u!136 &825326284
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7686,7 +7550,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &859503770
 GameObject:
@@ -8238,8 +8102,6 @@ GameObject:
   - component: {fileID: 976104763}
   - component: {fileID: 976104762}
   - component: {fileID: 976104761}
-  - component: {fileID: 976104760}
-  - component: {fileID: 976104759}
   - component: {fileID: 976104758}
   m_Layer: 0
   m_Name: Publico
@@ -8260,40 +8122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &976104759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976104757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"title":"Behavior","summary":null,"pan":{"x":38.0,"y":-113.0},"zoom":1.0,"elements":[{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Butacas","summary":"Siempre est\u00e1 en butacas hasta que se caiga la luz","pan":{"x":80.87495,"y":202.9554},"zoom":0.6999999,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-150.0},"guid":"fe8df2be-82d9-4a96-95b5-ca3db8f3cb69","$version":"A","$type":"Bolt.OnEnterState","$id":"14"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-156.0},"guid":"5f59e7e8-b9a0-49f8-afb7-1f2cc99914e8","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyButacas","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":-17.0},"guid":"3162caf2-0576-452e-99b0-231a040ae2cf","$version":"A","$type":"Bolt.GetVariable","$id":"19"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":-13.0},"guid":"d56e1ed9-7373-4b53-8321-94672bf28b09","$version":"A","$type":"Bolt.GetMember","$id":"21"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"6e675dab-4723-4418-ae8e-f3e2a9a509a0","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"21"},"destinationKey":"target","guid":"c655b69f-6ee2-4a9d-b00a-67150e2e2a58","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"%target","guid":"2140e53f-de72-4336-b2be-20bfc2d0d8b2","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":true,"position":{"x":-300.0,"y":-153.0},"width":170.0,"guid":"b9ac9700-24ca-4954-9ed2-23ab8fc9e46f","$version":"A","$type":"Bolt.FlowState","$id":"4"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Vest\u00edbulo","summary":"Cuando se arregle la luz vuelve a las butacas\n","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-116.0},"guid":"ff63dcd1-af0a-4df6-88e2-04ffca2e0b2d","$version":"A","$type":"Bolt.OnEnterState","$id":"37"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-122.0},"guid":"97b9d8dc-6578-4bcf-be77-5517f4f4c282","$version":"A","$type":"Bolt.InvokeMember","$id":"39"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":22.0},"guid":"6a35cce7-dbb4-46df-b42b-a15c53294ce6","$version":"A","$type":"Bolt.GetMember","$id":"42"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyVestibulo","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":18.0},"guid":"d9c7368c-7bb2-4c0b-ada9-06a204ecf90e","$version":"A","$type":"Bolt.GetVariable","$id":"45"},{"sourceUnit":{"$ref":"37"},"sourceKey":"trigger","destinationUnit":{"$ref":"39"},"destinationKey":"enter","guid":"74b5c911-71ae-4d1c-887a-9257f4744690","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"42"},"sourceKey":"value","destinationUnit":{"$ref":"39"},"destinationKey":"%target","guid":"fd362561-ca8e-4662-8fcd-81cb5b09131a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"45"},"sourceKey":"value","destinationUnit":{"$ref":"42"},"destinationKey":"target","guid":"6997f62a-bf1f-4959-866d-6b25726c9755","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":false,"position":{"x":111.0,"y":-155.0},"width":170.0,"guid":"c9977adb-80d4-445e-abbb-ab37b5b25211","$version":"A","$type":"Bolt.FlowState","$id":"27"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":137.25,"y":60.30071},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":253.0,"y":-26.0},"guid":"90ba83ae-d846-4bf9-bbf2-8154a7328282","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"60"},{"coroutine":false,"defaultValues":{},"position":{"x":-455.0,"y":-41.0},"guid":"3504b799-28c3-4edd-b0d2-d36cf3dd0ef9","$version":"A","$type":"Bolt.Update","$id":"62"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-200.0,"y":-42.0},"guid":"595eb3d3-b4bf-4e88-81e4-f0db3bdabdd1","$version":"A","$type":"Bolt.InvokeMember","$id":"64"},{"defaultValues":{},"position":{"x":41.0,"y":-42.0},"guid":"92772125-72bc-4052-875d-c9a1dedde2ff","$version":"A","$type":"Bolt.Branch","$id":"67"},{"sourceUnit":{"$ref":"67"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"60"},"destinationKey":"trigger","guid":"1e0a0e8e-c729-4c79-b486-4b9cdb778add","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"62"},"sourceKey":"trigger","destinationUnit":{"$ref":"64"},"destinationKey":"enter","guid":"8289e816-4dc0-4a21-855a-3b76b59796dc","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"exit","destinationUnit":{"$ref":"67"},"destinationKey":"enter","guid":"fed36515-45dc-4d98-bbba-6da0d9b3ff4d","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"result","destinationUnit":{"$ref":"67"},"destinationKey":"condition","guid":"79e231a9-66d3-4c7c-8158-0b3c715377ac","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"4"},"destination":{"$ref":"27"},"guid":"4c8c4da5-279b-48a0-a8e5-dfee6bcda5ac","$version":"A","$type":"Bolt.FlowStateTransition"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-108.1477,"y":46.25716},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":290.0,"y":-81.0},"guid":"251084d5-af24-4df7-aa0b-75c55b277ab7","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"83"},{"coroutine":false,"defaultValues":{},"position":{"x":-422.0,"y":-80.0},"guid":"074be8d4-c54c-4741-a7a7-1007be4b8fa2","$version":"A","$type":"Bolt.Update","$id":"85"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-163.0,"y":-82.0},"guid":"9dd9650b-0604-4e28-9b2a-c5af9f856349","$version":"A","$type":"Bolt.InvokeMember","$id":"87"},{"defaultValues":{},"position":{"x":74.0,"y":-81.0},"guid":"c0f5fe05-e675-4770-8af1-1cbd538dac73","$version":"A","$type":"Bolt.Branch","$id":"90"},{"sourceUnit":{"$ref":"90"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"83"},"destinationKey":"trigger","guid":"5b6c7056-d553-4fa4-82e7-5c107b67a11a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"85"},"sourceKey":"trigger","destinationUnit":{"$ref":"87"},"destinationKey":"enter","guid":"d406bc78-51c8-4c0d-bf2c-7bc5bc9d03af","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"exit","destinationUnit":{"$ref":"90"},"destinationKey":"enter","guid":"6d096d8e-3701-48fa-b986-852c65dc074a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"result","destinationUnit":{"$ref":"90"},"destinationKey":"condition","guid":"96f0bb42-6795-4d19-8674-e0b558bfedbd","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"27"},"destination":{"$ref":"4"},"guid":"6a230a51-0d64-4414-a53e-7baacb2e3903","$version":"A","$type":"Bolt.FlowStateTransition"}],"$version":"A"}}}'
-    _objectReferences: []
---- !u!114 &976104760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976104757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"EmptyButacas","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EmptyVestibulo","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 379702782}
-    - {fileID: 6276498}
 --- !u!136 &976104761
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9642,7 +9470,7 @@ Transform:
   - {fileID: 1589595902}
   - {fileID: 1187654222}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1165001953
 MonoBehaviour:
@@ -10103,7 +9931,7 @@ Transform:
   - {fileID: 1934984353}
   - {fileID: 1691491724}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1195707393
 GameObject:
@@ -10797,7 +10625,7 @@ Transform:
   m_Children:
   - {fileID: 1386117668}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1229224992
 MonoBehaviour:
@@ -11117,7 +10945,7 @@ Transform:
   - {fileID: 406756852}
   - {fileID: 1293266428}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1247018522
 GameObject:
@@ -11602,8 +11430,6 @@ GameObject:
   - component: {fileID: 1293266434}
   - component: {fileID: 1293266433}
   - component: {fileID: 1293266432}
-  - component: {fileID: 1293266431}
-  - component: {fileID: 1293266430}
   - component: {fileID: 1293266429}
   m_Layer: 0
   m_Name: Publico (5)
@@ -11640,40 +11466,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1293266430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293266427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"title":"Behavior","summary":null,"pan":{"x":-56.96898,"y":-115.5417},"zoom":1.0,"elements":[{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Butacas","summary":"Siempre est\u00e1 en butacas hasta que se caiga la luz","pan":{"x":89.26997,"y":-21.94913},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-150.0},"guid":"fe8df2be-82d9-4a96-95b5-ca3db8f3cb69","$version":"A","$type":"Bolt.OnEnterState","$id":"14"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-156.0},"guid":"5f59e7e8-b9a0-49f8-afb7-1f2cc99914e8","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":-13.0},"guid":"d56e1ed9-7373-4b53-8321-94672bf28b09","$version":"A","$type":"Bolt.GetMember","$id":"19"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyButacas","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":-17.0},"guid":"3162caf2-0576-452e-99b0-231a040ae2cf","$version":"A","$type":"Bolt.GetVariable","$id":"22"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"6e675dab-4723-4418-ae8e-f3e2a9a509a0","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"target","guid":"c655b69f-6ee2-4a9d-b00a-67150e2e2a58","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"%target","guid":"2140e53f-de72-4336-b2be-20bfc2d0d8b2","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":true,"position":{"x":-300.0,"y":-153.0},"width":170.0,"guid":"b9ac9700-24ca-4954-9ed2-23ab8fc9e46f","$version":"A","$type":"Bolt.FlowState","$id":"4"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Vest\u00edbulo","summary":"Cuando se arregle la luz vuelve a las butacas\n","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-116.0},"guid":"ff63dcd1-af0a-4df6-88e2-04ffca2e0b2d","$version":"A","$type":"Bolt.OnEnterState","$id":"37"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-122.0},"guid":"97b9d8dc-6578-4bcf-be77-5517f4f4c282","$version":"A","$type":"Bolt.InvokeMember","$id":"39"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":22.0},"guid":"6a35cce7-dbb4-46df-b42b-a15c53294ce6","$version":"A","$type":"Bolt.GetMember","$id":"42"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyVestibulo","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":18.0},"guid":"d9c7368c-7bb2-4c0b-ada9-06a204ecf90e","$version":"A","$type":"Bolt.GetVariable","$id":"45"},{"sourceUnit":{"$ref":"37"},"sourceKey":"trigger","destinationUnit":{"$ref":"39"},"destinationKey":"enter","guid":"74b5c911-71ae-4d1c-887a-9257f4744690","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"42"},"sourceKey":"value","destinationUnit":{"$ref":"39"},"destinationKey":"%target","guid":"fd362561-ca8e-4662-8fcd-81cb5b09131a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"45"},"sourceKey":"value","destinationUnit":{"$ref":"42"},"destinationKey":"target","guid":"6997f62a-bf1f-4959-866d-6b25726c9755","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":false,"position":{"x":111.0,"y":-155.0},"width":170.0,"guid":"c9977adb-80d4-445e-abbb-ab37b5b25211","$version":"A","$type":"Bolt.FlowState","$id":"27"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":-196.6775},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":253.0,"y":-26.0},"guid":"90ba83ae-d846-4bf9-bbf2-8154a7328282","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"60"},{"coroutine":false,"defaultValues":{},"position":{"x":-455.0,"y":-41.0},"guid":"3504b799-28c3-4edd-b0d2-d36cf3dd0ef9","$version":"A","$type":"Bolt.Update","$id":"62"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-196.0,"y":-43.0},"guid":"595eb3d3-b4bf-4e88-81e4-f0db3bdabdd1","$version":"A","$type":"Bolt.InvokeMember","$id":"64"},{"defaultValues":{},"position":{"x":41.0,"y":-42.0},"guid":"92772125-72bc-4052-875d-c9a1dedde2ff","$version":"A","$type":"Bolt.Branch","$id":"67"},{"sourceUnit":{"$ref":"67"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"60"},"destinationKey":"trigger","guid":"1e0a0e8e-c729-4c79-b486-4b9cdb778add","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"62"},"sourceKey":"trigger","destinationUnit":{"$ref":"64"},"destinationKey":"enter","guid":"e1bd4a71-f8ba-4339-ace7-c4c006e2fc1f","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"exit","destinationUnit":{"$ref":"67"},"destinationKey":"enter","guid":"23d43050-59e0-4479-ade7-2adc8b7ef537","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"result","destinationUnit":{"$ref":"67"},"destinationKey":"condition","guid":"5a870305-09a8-47d0-aa85-87b85c17af79","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"4"},"destination":{"$ref":"27"},"guid":"4c8c4da5-279b-48a0-a8e5-dfee6bcda5ac","$version":"A","$type":"Bolt.FlowStateTransition"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-108.1477,"y":46.25716},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":290.0,"y":-81.0},"guid":"251084d5-af24-4df7-aa0b-75c55b277ab7","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"83"},{"coroutine":false,"defaultValues":{},"position":{"x":-422.0,"y":-80.0},"guid":"074be8d4-c54c-4741-a7a7-1007be4b8fa2","$version":"A","$type":"Bolt.Update","$id":"85"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-163.0,"y":-82.0},"guid":"9dd9650b-0604-4e28-9b2a-c5af9f856349","$version":"A","$type":"Bolt.InvokeMember","$id":"87"},{"defaultValues":{},"position":{"x":74.0,"y":-81.0},"guid":"c0f5fe05-e675-4770-8af1-1cbd538dac73","$version":"A","$type":"Bolt.Branch","$id":"90"},{"sourceUnit":{"$ref":"90"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"83"},"destinationKey":"trigger","guid":"5b6c7056-d553-4fa4-82e7-5c107b67a11a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"85"},"sourceKey":"trigger","destinationUnit":{"$ref":"87"},"destinationKey":"enter","guid":"5740000b-642c-48db-b86b-ea1465520daf","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"exit","destinationUnit":{"$ref":"90"},"destinationKey":"enter","guid":"8ae24d44-9ae9-4bc1-9914-eb72a7a0449c","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"result","destinationUnit":{"$ref":"90"},"destinationKey":"condition","guid":"1029dab2-1c6a-4a0c-875b-8b9fc337b203","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"27"},"destination":{"$ref":"4"},"guid":"6a230a51-0d64-4414-a53e-7baacb2e3903","$version":"A","$type":"Bolt.FlowStateTransition"}],"$version":"A"}}}'
-    _objectReferences: []
---- !u!114 &1293266431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293266427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"EmptyButacas","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EmptyVestibulo","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 625845619}
-    - {fileID: 2047312471}
 --- !u!136 &1293266432
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12440,7 +12232,7 @@ Transform:
   - {fileID: 565968660}
   - {fileID: 2009794725}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1388911979
 BoxCollider:
@@ -13384,7 +13176,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1508624245
 MonoBehaviour:
@@ -14850,66 +14642,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1816162603}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1816860116
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1816860119}
-  - component: {fileID: 1816860118}
-  - component: {fileID: 1816860117}
-  m_Layer: 0
-  m_Name: Scene Variables
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1816860117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816860116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 995777834, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1816860118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816860116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!4 &1816860119
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816860116}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1823098369
 GameObject:
   m_ObjectHideFlags: 0
@@ -14955,7 +14687,7 @@ Transform:
   - {fileID: 637593797}
   - {fileID: 1812221561}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1831817980
 GameObject:
@@ -16175,7 +15907,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2009794724
 GameObject:
@@ -16190,8 +15922,6 @@ GameObject:
   - component: {fileID: 2009794731}
   - component: {fileID: 2009794730}
   - component: {fileID: 2009794729}
-  - component: {fileID: 2009794728}
-  - component: {fileID: 2009794727}
   - component: {fileID: 2009794726}
   m_Layer: 0
   m_Name: Publico (7)
@@ -16228,40 +15958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2009794727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009794724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"title":"Behavior","summary":null,"pan":{"x":-56.96898,"y":-115.5417},"zoom":1.0,"elements":[{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Butacas","summary":"Siempre est\u00e1 en butacas hasta que se caiga la luz","pan":{"x":89.26997,"y":-21.94913},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-150.0},"guid":"fe8df2be-82d9-4a96-95b5-ca3db8f3cb69","$version":"A","$type":"Bolt.OnEnterState","$id":"14"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-156.0},"guid":"5f59e7e8-b9a0-49f8-afb7-1f2cc99914e8","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":-13.0},"guid":"d56e1ed9-7373-4b53-8321-94672bf28b09","$version":"A","$type":"Bolt.GetMember","$id":"19"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyButacas","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":-17.0},"guid":"3162caf2-0576-452e-99b0-231a040ae2cf","$version":"A","$type":"Bolt.GetVariable","$id":"22"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"6e675dab-4723-4418-ae8e-f3e2a9a509a0","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"target","guid":"c655b69f-6ee2-4a9d-b00a-67150e2e2a58","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"%target","guid":"2140e53f-de72-4336-b2be-20bfc2d0d8b2","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":true,"position":{"x":-300.0,"y":-153.0},"width":170.0,"guid":"b9ac9700-24ca-4954-9ed2-23ab8fc9e46f","$version":"A","$type":"Bolt.FlowState","$id":"4"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"En
-      Vest\u00edbulo","summary":"Cuando se arregle la luz vuelve a las butacas\n","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-353.0,"y":-116.0},"guid":"ff63dcd1-af0a-4df6-88e2-04ffca2e0b2d","$version":"A","$type":"Bolt.OnEnterState","$id":"37"},{"chainable":false,"member":{"name":"SetDestination","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.AI.NavMeshAgent","targetTypeName":"UnityEngine.AI.NavMeshAgent","$version":"A"},"defaultValues":{"target":null,"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":217.0,"y":-122.0},"guid":"97b9d8dc-6578-4bcf-be77-5517f4f4c282","$version":"A","$type":"Bolt.InvokeMember","$id":"39"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-77.0,"y":22.0},"guid":"6a35cce7-dbb4-46df-b42b-a15c53294ce6","$version":"A","$type":"Bolt.GetMember","$id":"42"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"EmptyVestibulo","$type":"System.String"},"object":null},"position":{"x":-319.0,"y":18.0},"guid":"d9c7368c-7bb2-4c0b-ada9-06a204ecf90e","$version":"A","$type":"Bolt.GetVariable","$id":"45"},{"sourceUnit":{"$ref":"37"},"sourceKey":"trigger","destinationUnit":{"$ref":"39"},"destinationKey":"enter","guid":"74b5c911-71ae-4d1c-887a-9257f4744690","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"42"},"sourceKey":"value","destinationUnit":{"$ref":"39"},"destinationKey":"%target","guid":"fd362561-ca8e-4662-8fcd-81cb5b09131a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"45"},"sourceKey":"value","destinationUnit":{"$ref":"42"},"destinationKey":"target","guid":"6997f62a-bf1f-4959-866d-6b25726c9755","$type":"Bolt.ValueConnection"}],"$version":"A"}},"isStart":false,"position":{"x":111.0,"y":-155.0},"width":170.0,"guid":"c9977adb-80d4-445e-abbb-ab37b5b25211","$version":"A","$type":"Bolt.FlowState","$id":"27"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":-196.6775},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":253.0,"y":-26.0},"guid":"90ba83ae-d846-4bf9-bbf2-8154a7328282","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"60"},{"coroutine":false,"defaultValues":{},"position":{"x":-455.0,"y":-41.0},"guid":"3504b799-28c3-4edd-b0d2-d36cf3dd0ef9","$version":"A","$type":"Bolt.Update","$id":"62"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-196.0,"y":-43.0},"guid":"595eb3d3-b4bf-4e88-81e4-f0db3bdabdd1","$version":"A","$type":"Bolt.InvokeMember","$id":"64"},{"defaultValues":{},"position":{"x":41.0,"y":-42.0},"guid":"92772125-72bc-4052-875d-c9a1dedde2ff","$version":"A","$type":"Bolt.Branch","$id":"67"},{"sourceUnit":{"$ref":"67"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"60"},"destinationKey":"trigger","guid":"1e0a0e8e-c729-4c79-b486-4b9cdb778add","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"62"},"sourceKey":"trigger","destinationUnit":{"$ref":"64"},"destinationKey":"enter","guid":"948ca472-498e-44db-890a-4b468a44f16b","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"exit","destinationUnit":{"$ref":"67"},"destinationKey":"enter","guid":"356cfc0d-d2f8-4c51-a045-8414c947bb8e","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"64"},"sourceKey":"result","destinationUnit":{"$ref":"67"},"destinationKey":"condition","guid":"10e4127c-3c00-4006-9a37-2aecc17c5607","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"4"},"destination":{"$ref":"27"},"guid":"4c8c4da5-279b-48a0-a8e5-dfee6bcda5ac","$version":"A","$type":"Bolt.FlowStateTransition"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-108.1477,"y":46.25716},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":290.0,"y":-81.0},"guid":"251084d5-af24-4df7-aa0b-75c55b277ab7","$version":"A","$type":"Bolt.TriggerStateTransition","$id":"83"},{"coroutine":false,"defaultValues":{},"position":{"x":-422.0,"y":-80.0},"guid":"074be8d4-c54c-4741-a7a7-1007be4b8fa2","$version":"A","$type":"Bolt.Update","$id":"85"},{"chainable":false,"member":{"name":"getLuces","parameterTypes":[],"targetType":"Publico","targetTypeName":"Publico","$version":"A"},"defaultValues":{"target":null},"position":{"x":-163.0,"y":-82.0},"guid":"9dd9650b-0604-4e28-9b2a-c5af9f856349","$version":"A","$type":"Bolt.InvokeMember","$id":"87"},{"defaultValues":{},"position":{"x":74.0,"y":-81.0},"guid":"c0f5fe05-e675-4770-8af1-1cbd538dac73","$version":"A","$type":"Bolt.Branch","$id":"90"},{"sourceUnit":{"$ref":"90"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"83"},"destinationKey":"trigger","guid":"5b6c7056-d553-4fa4-82e7-5c107b67a11a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"85"},"sourceKey":"trigger","destinationUnit":{"$ref":"87"},"destinationKey":"enter","guid":"0c1e90d0-d17b-43ed-a66f-02cb95845acc","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"exit","destinationUnit":{"$ref":"90"},"destinationKey":"enter","guid":"4c84ed87-4a55-4c54-9370-388ccaeb747c","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"87"},"sourceKey":"result","destinationUnit":{"$ref":"90"},"destinationKey":"condition","guid":"76828142-5d6a-4436-8ed7-ba82b761577e","$type":"Bolt.ValueConnection"}],"$version":"A"}},"source":{"$ref":"27"},"destination":{"$ref":"4"},"guid":"6a230a51-0d64-4414-a53e-7baacb2e3903","$version":"A","$type":"Bolt.FlowStateTransition"}],"$version":"A"}}}'
-    _objectReferences: []
---- !u!114 &2009794728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009794724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"EmptyButacas","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EmptyVestibulo","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 75854005}
-    - {fileID: 1812221560}
 --- !u!136 &2009794729
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16985,7 +16681,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2137886080
 PrefabInstance:
@@ -17091,8 +16787,8 @@ GameObject:
   - component: {fileID: 373871681117018865}
   - component: {fileID: 373871681117018875}
   - component: {fileID: 373871681117018879}
-  - component: {fileID: 254}
   - component: {fileID: 473146498}
+  - component: {fileID: 373871681117018881}
   - component: {fileID: 373871681117018880}
   m_Layer: 0
   m_Name: Cantante
@@ -17186,11 +16882,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 373871681117018864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Script: {fileID: 11500000, guid: efe58df89b5b74a97a123b5ed2b70422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: c863da818b047784db68200cefe34385, type: 2}
+--- !u!114 &373871681117018881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373871681117018864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!114 &2536986899609911508
 MonoBehaviour:
