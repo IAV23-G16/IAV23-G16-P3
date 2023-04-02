@@ -11,6 +11,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
+using UnityEngine.AI;
 
 /*
  * Condicion de si la cantante esta encarcelada
@@ -18,16 +19,22 @@ using BehaviorDesigner.Runtime.Tasks;
 
 public class CapturadaCondition : Conditional
 {
-    //Cantante cantante;
+    NavMeshAgent agent;
+    Cantante cantante;
+    // Start is called before the first frame update
+
 
     public override void OnAwake()
     {
-        // IMPLEMENTAR
+        agent = GetComponent<NavMeshAgent>();
+        cantante = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>().singer.GetComponent<Cantante>();
     }
 
     public override TaskStatus OnUpdate()
     {
-        // IMPLEMENTAR
-        return TaskStatus.Success;
+        if (cantante.capturada)
+            return TaskStatus.Failure;
+        else
+            return TaskStatus.Success;
     }
 }

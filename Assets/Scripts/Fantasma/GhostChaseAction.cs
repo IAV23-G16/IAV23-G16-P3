@@ -24,12 +24,20 @@ public class GhostChaseAction : Action
 
     public override void OnAwake()
     {
-        // IMPLEMENTAR 
+        agent = GetComponent<NavMeshAgent>();
+        singer = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>().singer;
     }
 
     public override TaskStatus OnUpdate()
     {
-        // IMPLEMENTAR
-        return TaskStatus.Success;
+        agent.SetDestination(singer.transform.position);
+        if (Vector3.SqrMagnitude(transform.position - singer.transform.position) < 1.5f)
+        {
+            agent.SetDestination(transform.position);
+            singer.transform.parent = transform;
+            singer.GetComponent<Cantante>().capturada = true;
+            return TaskStatus.Success;
+        }
+        else return TaskStatus.Running;
     }
 }

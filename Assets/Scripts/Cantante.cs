@@ -32,6 +32,8 @@ public class Cantante : MonoBehaviour
     public int distanciaDeMerodeo = 16;
     // Si canta o no
     public bool cantando = false;
+    // Si descansa o no
+    public bool descansando = false;
 
     // Componente cacheado NavMeshAgent
     private NavMeshAgent agente;
@@ -69,60 +71,125 @@ public class Cantante : MonoBehaviour
     {
         tiempoComienzoCanto = 0;
         cantando = true;
+        descansando = false;
     }
 
     // Comprueba si tiene que dejar de cantar
     public bool TerminaCantar()
     {
-        // IMPLEMENTAR
-        return true;
+        NavMeshHit navHit;
+        NavMesh.SamplePosition(transform.position, out navHit, 2f, NavMesh.AllAreas);
+        if ((1 << NavMesh.GetAreaFromName("Escenario") & navHit.mask) != 0)
+        {
+            // Cuenta el tiempo mientras está en el escenario
+            tiempoComienzoCanto += Time.deltaTime;
+            if (!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Play();
+        }
+        return tiempoComienzoCanto >= tiempoDeCanto;
     }
 
     // Comienza a descansar, reseteando el temporizador
     public void Descansar()
     {
-        // IMPLEMENTAR
+        tiempoComienzoDescanso = 0;
+        descansando = true;
+        cantando = false;
     }
 
     // Comprueba si tiene que dejar de descansar
     public bool TerminaDescansar()
     {
-        // IMPLEMENTAR
-        return true;
+        NavMeshHit navHit;
+        NavMesh.SamplePosition(transform.position, out navHit, 2f, NavMesh.AllAreas);
+
+        // Cuenta el tiempo si está en las Bambalinas
+        if ((1 << NavMesh.GetAreaFromName("Bambalinas") & navHit.mask) != 0)
+            tiempoComienzoDescanso += Time.deltaTime;
+
+        return tiempoComienzoDescanso >= tiempoDeDescanso;
     }
 
     // Comprueba si se encuentra en la celda
     public bool EstaEnCelda()
     {
-        // IMPLEMENTAR
-        return true;
+        NavMeshHit navHit;
+        NavMesh.SamplePosition(transform.position, out navHit, 2f, NavMesh.AllAreas);
+        return (1 << NavMesh.GetAreaFromName("Celda") & navHit.mask) != 0;
     }
 
     // Comprueba si esta en un sitio desde el cual sabe llegar al escenario
     public bool ConozcoEsteSitio()
     {
-        // IMPLEMENTAR
-        return true;
+        NavMeshHit navHit;
+        NavMesh.SamplePosition(transform.position, out navHit, 2f, NavMesh.AllAreas);
+
+        // Comprueba para todos los lugares desde los que hay camino
+        return (1 << NavMesh.GetAreaFromName("Escenario") & navHit.mask) != 0 ||
+            (1 << NavMesh.GetAreaFromName("Bambalinas") & navHit.mask) != 0 ||
+            (1 << NavMesh.GetAreaFromName("Palco Oeste") & navHit.mask) != 0 ||
+            (1 << NavMesh.GetAreaFromName("Palco Este") & navHit.mask) != 0 ||
+            (1 << NavMesh.GetAreaFromName("Butacas") & navHit.mask) != 0 ||
+            (1 << NavMesh.GetAreaFromName("Pasillos Escenario") & navHit.mask) != 0;
     }
 
     //Mira si ve al vizconde con un angulo de vision y una distancia maxima
     public bool Scan()
     {
-        // IMPLEMENTAR
-        return true;
+        double forward = Vector3.Angle(transform.forward, objetivo.position - transform.position);
+
+        if (forward < anguloVistaHorizontal && Vector3.Magnitude(transform.position - objetivo.position) <= distanciaVista)
+        {
+            // Raycast de visión
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, objetivo.position - transform.position, out hit, Mathf.Infinity) && hit.collider.gameObject.GetComponent<Player>())
+            {
+                return true;
+            };
+        }
+        return false;
     }
 
     // Genera una posicion aleatoria a cierta distancia dentro de las areas permitidas
-    private Vector3 RandomNavSphere(float distance) 
+    private Vector3 RandomNavSphere(float dist)
     {
-        // IMPLEMENTAR
-        return new Vector3();
+        Vector3 randomDir;
+        NavMeshHit navHit;
+        do
+        {
+            randomDir = UnityEngine.Random.insideUnitSphere * dist;
+            randomDir += gameObject.transform.position;
+            NavMesh.SamplePosition(randomDir, out navHit, dist, NavMesh.AllAreas);
+
+        } while ((1 << NavMesh.GetAreaFromName("Escenario") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Bambalinas") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Palco Oeste") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Palco Este") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Butacas") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Walkable") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Jump") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Vestíbulo") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Sótano Este") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Sótano Oeste") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Celda") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Sótano Norte") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Música") & navHit.mask) == 0 &&
+            (1 << NavMesh.GetAreaFromName("Pasillos Escenario") & navHit.mask) == 0);
+
+        return navHit.position;
     }
 
     // Genera un nuevo punto de merodeo cada vez que agota su tiempo de merodeo actual
     public void IntentaMerodear()
     {
-        // IMPLEMENTAR
+        if ((transform.position - agente.destination).magnitude <= 0.1 + agente.stoppingDistance)
+        {
+            tiempoComienzoMerodeo -= Time.deltaTime;
+            if (tiempoComienzoMerodeo <= 0)
+            {
+                tiempoComienzoMerodeo = tiempoDeMerodeo;
+                agente.SetDestination(RandomNavSphere(distanciaDeMerodeo));
+            }
+        }
     }
     public bool GetCapturada()
     {
@@ -132,7 +199,7 @@ public class Cantante : MonoBehaviour
 
     public void setCapturada(bool cap)
     {
-        // IMPLEMENTAR
+        capturada = cap;
     }
 
     public GameObject sigueFantasma()
@@ -149,5 +216,15 @@ public class Cantante : MonoBehaviour
     private void nuevoObjetivo(GameObject obj)
     {
         // IMPLEMENTAR
+    }
+
+    public bool GetDescansando()
+    {
+        return descansando;
+    }
+
+    public bool GetCantando()
+    {
+        return cantando;
     }
 }
