@@ -45,12 +45,12 @@ public class BarcaTriggers : MonoBehaviour
         {
             enfriamientoBarca -= Time.deltaTime;
         }
-       /* if (barca.GetComponent<Barca>().isMoving() && salto.enabled)
-            salto.enabled = false;*/
-        /*else if (enfriamientoBarca <= 0 && !salto.enabled && !barca.GetComponent<Barca>().isMoving())
+        if (barca.GetComponent<Barca>().isMoving() && salto.enabled)
+            salto.enabled = false;
+        else if (enfriamientoBarca <= 0 && !salto.enabled && !barca.GetComponent<Barca>().isMoving())
         {
             salto.enabled = true;
-        }*/
+        }
     }
 
     

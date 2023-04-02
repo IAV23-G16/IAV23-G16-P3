@@ -21,7 +21,7 @@ public class PublicoCondition : Conditional
 
     public override void OnAwake()
     {
-        // IMPLEMENTAR 
+        blackboard = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>();
     }
 
     public override TaskStatus OnUpdate()
