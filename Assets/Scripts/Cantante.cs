@@ -34,6 +34,8 @@ public class Cantante : MonoBehaviour
     public bool cantando = false;
     // Si descansa o no
     public bool descansando = false;
+    // Si esta encerrada o no
+    public bool encerrada = false;
 
     // Componente cacheado NavMeshAgent
     private NavMeshAgent agente;
