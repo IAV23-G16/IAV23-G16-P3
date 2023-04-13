@@ -2757,6 +2757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mitadDerecha: 1
 --- !u!136 &258457289
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3890,6 +3891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mitadDerecha: 0
 --- !u!136 &406756856
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5393,6 +5395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mitadDerecha: 1
 --- !u!136 &565968664
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6442,6 +6445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mitadDerecha: 0
 --- !u!136 &697826483
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7418,6 +7422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mitadDerecha: 0
 --- !u!136 &825326284
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8122,6 +8127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mitadDerecha: 1
 --- !u!136 &976104761
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10908,6 +10914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1245809304}
   - component: {fileID: 1245809303}
+  - component: {fileID: 1245809305}
   m_Layer: 0
   m_Name: PublicoEmpty izq
   m_TagString: Untagged
@@ -10947,6 +10954,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1245809305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245809302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e55405438296d04da9223ea9f9cd6e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mitadDerecha: 0
 --- !u!1 &1247018522
 GameObject:
   m_ObjectHideFlags: 0
@@ -11466,6 +11486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mitadDerecha: 0
 --- !u!136 &1293266432
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12208,6 +12229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1388911978}
   - component: {fileID: 1388911979}
+  - component: {fileID: 1388911980}
   m_Layer: 0
   m_Name: PublicoEmpty der
   m_TagString: Untagged
@@ -12247,6 +12269,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 21.08, y: 14.73, z: 26.86}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1388911980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388911977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e55405438296d04da9223ea9f9cd6e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mitadDerecha: 1
 --- !u!1001 &1407283824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15877,6 +15912,8 @@ MonoBehaviour:
   stage: {fileID: 908012309}
   basement: {fileID: 1137905981}
   backStage: {fileID: 553852558}
+  audienceLeftEmpty: {fileID: 1245809302}
+  audienceRightEmpty: {fileID: 1388911977}
   singer: {fileID: 373871681117018864}
   player: {fileID: 1908876747}
   westLever: {fileID: 162329927}
@@ -15958,6 +15995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc9511581510e4cb6c120ffaa7e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mitadDerecha: 1
 --- !u!136 &2009794729
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16968,7 +17006,7 @@ MonoBehaviour:
         Condition","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(39.62982,127.037048)"},"ID":7,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"GhostReturnAction","NodeData":{"Offset":"(-13.4515076,148.774185)"},"ID":8,"Name":"Ghost
         Return Action","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(157.727081,144.469711)"},"ID":9,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(10.5131912,153.589447)"},"ID":10,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":5},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"GhostArreglaPianoAction","NodeData":{"Offset":"(180.7329,144.196259)"},"ID":11,"Name":"Ghost
         Arregla Piano Action","Instant":true}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(362.7925,207.2378)"},"ID":12,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"CantanteCondition","NodeData":{"Offset":"(-496.368164,145.657837)"},"ID":13,"Name":"Cantante
-        Condition","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-281.119171,148.953583)"},"ID":14,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-118.571465,150.036423)"},"ID":15,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"PublicoCondition","NodeData":{"Offset":"(-200,138.845078)"},"ID":16,"Name":"Publico
+        Condition","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-281.119171,148.953583)"},"ID":14,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-118.571465,150.036423)"},"ID":15,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"PublicoCondition","NodeData":{"Offset":"(-650,138.845078)"},"ID":16,"Name":"Publico
         Condition","Instant":true,"BooleanpublicoWest":false,"BooleanpublicoEast":false}]},{"Type":"GhostChaseAction","NodeData":{"Offset":"(86.74121,142.828751)"},"ID":17,"Name":"Ghost
         Chase Action","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(226.6665,139.999878)"},"ID":18,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"GhostSearchStageAction","NodeData":{"Offset":"(-209.251129,153.961334)"},"ID":19,"Name":"Ghost
         Search Stage Action","Instant":true},{"Type":"GhostChaseAction","NodeData":{"Offset":"(-1.947712,162.124863)"},"ID":20,"Name":"Ghost

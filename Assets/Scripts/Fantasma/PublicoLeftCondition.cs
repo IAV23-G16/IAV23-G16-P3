@@ -12,12 +12,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PublicoCondition : Conditional
+public class PublicoLeftCondition : Conditional
 {
     GameBlackboard blackboard;
-
-    [SerializeField] bool publicoWest;
-    [SerializeField] bool publicoEast;
 
     public override void OnAwake()
     {
@@ -26,7 +23,9 @@ public class PublicoCondition : Conditional
 
     public override TaskStatus OnUpdate()
     {
-        // IMPLEMENTAR
-        return TaskStatus.Success;
+        if (blackboard.audienceLeftEmpty.GetComponent<ContadorPublico>().getCount() == 0)
+            return TaskStatus.Success;
+        else
+            return TaskStatus.Failure;
     }
 }

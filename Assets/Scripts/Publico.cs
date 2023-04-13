@@ -12,6 +12,7 @@ public class Publico : MonoBehaviour
     //int lucesEncendidas = 2;
     bool miLuzEncendida;
     bool sentado = true;
+    public bool mitadDerecha;
 
     GameObject luzAsociada;
     private void Start()

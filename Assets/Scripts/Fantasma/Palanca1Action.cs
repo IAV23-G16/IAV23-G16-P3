@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
@@ -9,7 +8,7 @@ using UnityEngine.AI;
  * Accion de accionar una palanca de los candelabros (la mas cercana), cuando la alcanza devuelve Success
  */
 
-public class Palanca2Action : Action
+public class Palanca1Action : Action
 {
     NavMeshAgent agent;
     GameObject lever;
@@ -22,7 +21,7 @@ public class Palanca2Action : Action
 
     public override TaskStatus OnUpdate()
     {
-        lever = blackboard.eastLever;
+        lever = blackboard.westLever;
         var navHit = new NavMeshHit();
         NavMesh.SamplePosition(transform.position, out navHit, 2, NavMesh.AllAreas);
         agent.SetDestination(lever.transform.position);
