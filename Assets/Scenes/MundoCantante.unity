@@ -16790,6 +16790,7 @@ GameObject:
   - component: {fileID: 473146498}
   - component: {fileID: 373871681117018881}
   - component: {fileID: 373871681117018880}
+  - component: {fileID: 373871681117018882}
   m_Layer: 0
   m_Name: Cantante
   m_TagString: Cantante
@@ -16904,6 +16905,34 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!114 &373871681117018882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373871681117018864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda1dafb473ee2d47acfd3301f82447c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoDeCanto: 15
+  tiempoDeDescanso: 5
+  capturada: 0
+  anguloVistaHorizontal: 93.4800033569336
+  distanciaVista: 8
+  objetivo: {fileID: 944435481}
+  tiempoDeMerodeo: 0.5
+  tiempoComienzoMerodeo: 0
+  distanciaDeMerodeo: 16
+  cantando: 0
+  descansando: 0
+  encerrada: 0
+  Escenario: {fileID: 908012310}
+  Bambalinas: {fileID: 553852559}
+  bb: {fileID: 2002151600}
+  fantasma: {fileID: 2536986899609911519}
 --- !u!114 &2536986899609911508
 MonoBehaviour:
   m_ObjectHideFlags: 0
