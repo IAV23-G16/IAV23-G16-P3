@@ -24,8 +24,8 @@ public class PublicoRightCondition : Conditional
     public override TaskStatus OnUpdate()
     {
         if (blackboard.audienceRightEmpty.GetComponent<ContadorPublico>().getCount() == 0)
-            return TaskStatus.Success;
-        else
             return TaskStatus.Failure;
+        else
+            return TaskStatus.Success;
     }
 }

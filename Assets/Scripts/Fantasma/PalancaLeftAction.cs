@@ -9,7 +9,7 @@ using UnityEngine.AI;
  * Accion de accionar una palanca de los candelabros (la mas cercana), cuando la alcanza devuelve Success
  */
 
-public class Palanca2Action : Action
+public class PalancaLeftAction : Action
 {
     NavMeshAgent agent;
     GameObject lever;
