@@ -26,6 +26,7 @@ public class GameBlackboard : MonoBehaviour
     public GameObject stage;
     public GameObject basement;
     public GameObject backStage;
+    public GameObject hall;
 
     public GameObject audienceLeftEmpty;
     public GameObject audienceRightEmpty;

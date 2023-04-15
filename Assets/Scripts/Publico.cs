@@ -9,16 +9,25 @@ using UnityEngine.AI;
 
 public class Publico : MonoBehaviour
 {
-    //int lucesEncendidas = 2;
+    GameBlackboard blackboard;
+    NavMeshAgent agent;
+    GameObject hall;
+    GameObject luzAsociada;
+
+    Vector3 initialPositon;
+
     bool miLuzEncendida;
     bool sentado = true;
     public bool mitadDerecha;
 
-    GameObject luzAsociada;
     private void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
+        blackboard = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>();
         //lucesEncendidas = 2;
         sentado = true;
+        initialPositon = transform.position;
+        hall = blackboard.hall;
     }
 
     public void LateUpdate()
@@ -41,6 +50,7 @@ public class Publico : MonoBehaviour
     {
         miLuzEncendida = false;
         sentado = false;
+        agent.SetDestination(hall.transform.position);
         //lucesEncendidas--;
         //sentado = lucesEncendidas == 2;
     }
@@ -49,6 +59,7 @@ public class Publico : MonoBehaviour
     {
         miLuzEncendida = true;
         sentado = true;
+        agent.SetDestination(initialPositon);
         // lucesEncendidas++;
         //sentado = lucesEncendidas == 2;
     }
