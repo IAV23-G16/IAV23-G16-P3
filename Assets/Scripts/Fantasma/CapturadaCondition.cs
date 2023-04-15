@@ -19,22 +19,20 @@ using UnityEngine.AI;
 
 public class CapturadaCondition : Conditional
 {
-    NavMeshAgent agent;
     Cantante cantante;
     // Start is called before the first frame update
 
 
     public override void OnAwake()
     {
-        agent = GetComponent<NavMeshAgent>();
         cantante = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>().singer.GetComponent<Cantante>();
     }
 
     public override TaskStatus OnUpdate()
     {
-        if (cantante.capturada)
-            return TaskStatus.Failure;
-        else
+        if (cantante.capturadaPorFant)
             return TaskStatus.Success;
+        else
+            return TaskStatus.Failure;
     }
 }

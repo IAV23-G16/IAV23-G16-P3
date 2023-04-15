@@ -20,7 +20,6 @@ using UnityEngine.AI;
 public class GhostLlevarCantante : Action
 {
     NavMeshAgent agent;
-    NavMeshAgent singerNav;
     GameObject singer;
 
     GameObject sotanoNorte;
@@ -28,30 +27,22 @@ public class GhostLlevarCantante : Action
     public override void OnAwake()
     {
         agent = GetComponent<NavMeshAgent>();
-
         sotanoNorte = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>().basement;
         singer = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>().singer;
-        singerNav = singer.GetComponent<NavMeshAgent>();        
     }
 
     public override TaskStatus OnUpdate()
     {
-        agent.SetDestination(singer.transform.position);
-
-        if (Vector3.SqrMagnitude(transform.position - singer.transform.position) < 1.2f)
+        if (agent.enabled)
         {
-            agent.SetDestination(transform.position);
-            singer.GetComponent<Cantante>().capturada = true;
-
-            //return TaskStatus.Success;
-            singerNav.enabled = false;
-            singer.transform.position = transform.position + new Vector3(0, 1, 0);
-            singer.transform.SetParent(transform, true);
-            //agent.SetDestination(sotanoNorte.transform.position);
-
+            agent.SetDestination(sotanoNorte.transform.position);
+        }
+        if (Vector3.SqrMagnitude(transform.position - sotanoNorte.transform.position) < 1.2f)
+        {
             return TaskStatus.Success;
         }
         else return TaskStatus.Running;
+        return TaskStatus.Running;
 
     }
 }

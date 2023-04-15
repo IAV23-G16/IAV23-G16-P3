@@ -36,6 +36,8 @@ public class Cantante : MonoBehaviour
     public bool descansando = false;
     // Si esta encerrada o no
     public bool encerrada = false;
+    //
+    public bool capturadaPorFant = false;
 
     // Componente cacheado NavMeshAgent
     private NavMeshAgent agente;
@@ -49,6 +51,7 @@ public class Cantante : MonoBehaviour
 
     //para seguir al fantasma o al vizconde
     public GameObject fantasma;
+    public GameObject player;
 
     public void Awake()
     {
@@ -62,6 +65,10 @@ public class Cantante : MonoBehaviour
 
     public void LateUpdate()
     {
+        if (capturada)
+        {
+            transform.position = objetivo.position - objetivo.forward.normalized;
+        }
         if (agente.velocity.sqrMagnitude > Mathf.Epsilon)
         {
             transform.rotation = Quaternion.LookRotation(agente.velocity.normalized);
@@ -195,29 +202,48 @@ public class Cantante : MonoBehaviour
     }
     public bool GetCapturada()
     {
-        // IMPLEMENTAR
-        return true;
+        return capturada;
     }
 
-    public void setCapturada(bool cap)
+    public bool GetCapturadaPorFantasma()
     {
+        return capturadaPorFant;
+    }
+
+    public void setCapturada(bool cap, bool porFantasma)
+    {
+        capturadaPorFant = porFantasma;
         capturada = cap;
+
+        if (capturada)
+        {
+            cantando = false;
+            if (capturadaPorFant)
+                sigueFantasma();
+            else
+                sigueVizconde();
+        }
+        else
+            capturada = false;
+              
     }
 
-    public GameObject sigueFantasma()
+    public void sigueFantasma()
     {
-        // IMPLEMENTAR
-        return null;
+        agente.enabled = false;
+        objetivo = fantasma.transform;
     }
 
     public void sigueVizconde()
     {
-        // IMPLEMENTAR
+        if (encerrada) encerrada = false;
+        agente.enabled = false;
+        objetivo = player.transform;
     }
 
     private void nuevoObjetivo(GameObject obj)
     {
-        // IMPLEMENTAR
+        agente.SetDestination(obj.transform.position);
     }
 
     public bool GetDescansando()

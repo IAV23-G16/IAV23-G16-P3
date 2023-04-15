@@ -16,17 +16,20 @@ using UnityEngine.AI;
 
 public class GhostArreglaPianoAction : Action
 {
+    NavMeshAgent agent;
     ControlPiano pianoControl;
     GameObject piano;
 
     public override void OnAwake()
     {
+        agent = GetComponent<NavMeshAgent>();
         pianoControl = GameObject.FindGameObjectWithTag("Piano").GetComponent<ControlPiano>();
         piano = GameObject.FindGameObjectWithTag("Piano");
     }
 
     public override TaskStatus OnUpdate()
     {
+        agent.SetDestination(piano.transform.position);
         if (pianoControl.roto)
         {
             pianoControl.ArreglaPiano();

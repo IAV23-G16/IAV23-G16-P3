@@ -31,11 +31,9 @@ public class GhostChaseAction : Action
     public override TaskStatus OnUpdate()
     {
         agent.SetDestination(singer.transform.position);
-        if (Vector3.SqrMagnitude(transform.position - singer.transform.position) < 1.5f)
+        if (Vector3.SqrMagnitude(singer.transform.position - this.transform.position) < 1.5f)
         {
-            agent.SetDestination(transform.position);
-            singer.transform.parent = transform;
-            singer.GetComponent<Cantante>().capturada = true;
+            singer.GetComponent<Cantante>().setCapturada(true, true);
             return TaskStatus.Success;
         }
         else return TaskStatus.Running;

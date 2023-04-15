@@ -30,17 +30,14 @@ public class GhostSearchStageAction : Action
 
     public override TaskStatus OnUpdate()
     {
-        NavMeshHit navHit;
-        NavMesh.SamplePosition(transform.position, out navHit, 2, NavMesh.AllAreas);
         if (agent.enabled)
         {
             agent.SetDestination(stage.transform.position);
-            if (Vector3.SqrMagnitude(transform.position - stage.transform.position) < 1)
+            if (agent.pathStatus == NavMeshPathStatus.PathComplete)
             {
                 return TaskStatus.Success;
             }
-            else
-                return TaskStatus.Running;
+            return TaskStatus.Running;
         }
         else
             return TaskStatus.Failure;

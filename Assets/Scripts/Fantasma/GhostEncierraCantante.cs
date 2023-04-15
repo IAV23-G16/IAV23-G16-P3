@@ -1,34 +1,32 @@
 using System.Collections;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-/*
- * Accion de accionar una palanca de los candelabros (la mas cercana), cuando la alcanza devuelve Success
- */
-
-public class PalancaLeftAction : Action
+public class GhostEncierraCantante : Action
 {
     NavMeshAgent agent;
-    GameObject lever;
     GameBlackboard blackboard;
+    GameObject prison;
+
     public override void OnAwake()
     {
         agent = GetComponent<NavMeshAgent>();
         blackboard = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>();
+        prison = blackboard.celda;
     }
 
     public override TaskStatus OnUpdate()
     {
-        lever = blackboard.eastLever;
-        var navHit = new NavMeshHit();
-        NavMesh.SamplePosition(transform.position, out navHit, 2, NavMesh.AllAreas);
-        agent.SetDestination(lever.transform.position);
-        if (Vector3.SqrMagnitude(transform.position - lever.transform.position) < 1)
+        if (agent.enabled)
+            agent.SetDestination(prison.transform.position);
+        if (Vector3.SqrMagnitude(transform.position - prison.transform.position) < 1.5f)
         {
             agent.SetDestination(transform.position);
+            blackboard.singer.transform.parent = null;
+            blackboard.singer.GetComponent<Cantante>().setCapturada(false, false);
+            blackboard.singer.GetComponent<Cantante>().encerrada = true;
             return TaskStatus.Success;
         }
         else return TaskStatus.Running;
