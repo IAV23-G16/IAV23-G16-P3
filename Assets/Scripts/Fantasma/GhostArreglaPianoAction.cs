@@ -13,7 +13,7 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-
+//Acción que hace que el agente arregle el piano
 public class GhostArreglaPianoAction : Action
 {
     NavMeshAgent agent;
@@ -29,9 +29,12 @@ public class GhostArreglaPianoAction : Action
 
     public override TaskStatus OnUpdate()
     {
+        //El agente se dirige hacia el piano
         agent.SetDestination(piano.transform.position);
+        //Si está roto y se acerca
         if (pianoControl.roto && transform.position.x - piano.transform.position.x < 2f && transform.position.z - piano.transform.position.z < 2f)
         {
+            //Lo arregla
             pianoControl.ArreglaPiano();
             return TaskStatus.Success;
         }

@@ -5,6 +5,7 @@ using UnityEngine.AI;
 using BehaviorDesigner.Runtime.Tasks;
 using BehaviorDesigner.Runtime;
 
+//Acción que hace que el agente se diriga hacia las palancas, cuando las alcanza devuelve Success
 public class GhostPalanca : Action
 {
     NavMeshAgent agent;
@@ -30,15 +31,17 @@ public class GhostPalanca : Action
         if (!agent.enabled)
             return TaskStatus.Running;
 
-
+        //Booleanos que indican si las lámparas están en su sitio
         izda = palancaIzda.caido;
         dcha = palancaDcha.caido;
 
+        //Si están en su sitio, se dirige a la más cercana
         if (!izda && !dcha)
         {
             palanca = blackboard.nearestLever(this.gameObject);
             agent.SetDestination(palanca.transform.position);
         }
+        //Si una de ellas se ha caído, se dirige a la otra
         else if (!izda)
         {
             agent.SetDestination(palancaIzda.transform.position);

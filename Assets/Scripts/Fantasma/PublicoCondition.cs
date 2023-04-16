@@ -14,6 +14,7 @@ using UnityEngine.AI;
 using BehaviorDesigner.Runtime.Tasks;
 using BehaviorDesigner.Runtime;
 
+//Condición que comprueba si las lámparas han caído
 public class PublicoCondition : Conditional
 {
     GameBlackboard blackboard;

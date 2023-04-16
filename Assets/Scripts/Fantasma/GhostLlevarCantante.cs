@@ -13,14 +13,10 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-/*
- * Accion de seguir a la cantante, cuando la alcanza devuelve Success
- */
-
+//Acción que hace que el agente lleve a la cantante al sótano norte, cuando llega devuelve Success
 public class GhostLlevarCantante : Action
 {
     NavMeshAgent agent;
-    GameObject singer;
 
     GameObject sotanoNorte;
 
@@ -28,13 +24,13 @@ public class GhostLlevarCantante : Action
     {
         agent = GetComponent<NavMeshAgent>();
         sotanoNorte = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>().basement;
-        singer = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>().singer;
     }
 
     public override TaskStatus OnUpdate()
     {
         if (agent.enabled)
         {
+            //El agente se dirige hacia el sótano norte
             agent.SetDestination(sotanoNorte.transform.position);
         }
         if (Vector3.SqrMagnitude(transform.position - sotanoNorte.transform.position) < 1.2f)

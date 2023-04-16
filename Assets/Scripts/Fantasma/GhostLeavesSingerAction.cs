@@ -4,7 +4,7 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-
+//Acción que hace que el agente deje a la cantante, cuando la deja devuelve Success
 public class GhostLeavesSingerAction : Action
 {
     GameObject cantante;

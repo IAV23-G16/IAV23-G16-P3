@@ -13,10 +13,7 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-/*
- * Accion de ir a una sala aleatoria, asignada por el Blackboard, cuando llega devuelve Success
- */
-
+//Acción que hace que el agente vaya a una sala aleatoria, asignada por el Blackboard, cuando llega devuelve Success
 public class GhostSearchRandomAction : Action
 {
     NavMeshAgent agent;

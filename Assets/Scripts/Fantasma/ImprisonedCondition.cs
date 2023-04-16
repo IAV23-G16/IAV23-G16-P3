@@ -12,10 +12,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 
-/*
- * Condicion de si la cantante esta encarcelada
- */
-
+//Condición que comprueba si la cantante está encarcelada
 public class ImprisonedCondition : Conditional
 {
     GameBlackboard blackboard;

@@ -12,6 +12,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Condición que comprueba si el piano está roto
 public class PianoCondition : Conditional
 {
     ControlPiano piano;

@@ -13,9 +13,9 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-/*
- * Accion de cerrar la puerta de la celda, yendo hacia la palanca, cuando la alcanza devuelve Success
- */
+
+//Acción que hace que el agente cierre la puerta de la celda, yendo hacia la palanca, cuando la alcanza devuelve Success
+
 
 public class GhostCloseDoorAction : Action
 {
@@ -34,11 +34,10 @@ public class GhostCloseDoorAction : Action
 
     public override TaskStatus OnUpdate()
     {
+        //El agente se dirige hacia la puerta
         agent.SetDestination(puerta.transform.position);
         if (Vector3.SqrMagnitude(transform.position - puerta.transform.position) < 1.5f)
         {
-            // palanca.Interact();
-            //agent.SetDestination(transform.position);
             return TaskStatus.Success;
         }
         return TaskStatus.Running;

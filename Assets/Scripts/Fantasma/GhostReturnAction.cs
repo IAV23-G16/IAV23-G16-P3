@@ -13,9 +13,9 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-/*
- * Accion de ir a la sala de musica, cuando llega devuelve Success
- */
+
+ //Acción que hace que el agente vaya a la sala de musica, cuando llega devuelve Success
+ 
 
 public class GhostReturnAction : Action
 {
@@ -30,6 +30,7 @@ public class GhostReturnAction : Action
 
     public override TaskStatus OnUpdate()
     {
+        //El agente se dirige hacia la sala de música
         if (agent.enabled)
             agent.SetDestination(musicRoom.transform.position);
         if (Vector3.SqrMagnitude(transform.position - musicRoom.transform.position) < 1.5f)

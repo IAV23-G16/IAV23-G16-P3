@@ -13,21 +13,15 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-/*
- * Devuelve Success cuando la cantante es sobre el palco
- */
-
-
+//Condición que comprueba si el agente ha chocado con el vizconde
 public class VizcondeChocaCondition : Conditional
 {
-    NavMeshAgent agent;
     GameBlackboard blackboard;
     GameObject vizconde;
     GameObject cantante;
 
     public override void OnAwake()
     {
-        agent = GetComponent<NavMeshAgent>();
         blackboard = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>();
         vizconde = blackboard.player;
         cantante = blackboard.singer;

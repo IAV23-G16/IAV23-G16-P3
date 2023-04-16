@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 
-/*
- * Devuelve Success cuando la puerta de la celda esta abierta
- */
-
+//Condición que comprueba si la puerta está abierta
 public class DoorCondition : Conditional
 {
     GameBlackboard blackboard;

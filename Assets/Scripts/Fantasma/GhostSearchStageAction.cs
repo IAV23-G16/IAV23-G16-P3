@@ -13,10 +13,7 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-/*
- * Accion de ir al escenario, cuando llega devuelve Success
- */
-
+//Acción que hace que el agente vaya al escenario, cuando llega devuelve Success
 public class GhostSearchStageAction : Action
 {
     NavMeshAgent agent;
@@ -30,6 +27,7 @@ public class GhostSearchStageAction : Action
 
     public override TaskStatus OnUpdate()
     {
+        //El agente se dirige hacia el escenario
         if (agent.enabled)
         {
             agent.SetDestination(stage.transform.position);

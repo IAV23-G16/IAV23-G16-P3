@@ -12,11 +12,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 
-
-/*
- * Devuelve Success cuando la cantante es sobre el palco
- */
-
+//Condición que comprueba si la cantante está cantando en el escenario
 
 public class CantanteCondition : Conditional
 {

@@ -13,15 +13,10 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-/*
- * Condicion de si la cantante esta encarcelada
- */
-
+//Condición que comprueba si la cantante ha sido capturada por el fantasma
 public class CapturadaCondition : Conditional
 {
     Cantante cantante;
-    // Start is called before the first frame update
-
 
     public override void OnAwake()
     {

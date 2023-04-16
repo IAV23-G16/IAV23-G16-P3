@@ -13,10 +13,8 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
-/*
- * Accion de seguir a la cantante, cuando la alcanza devuelve Success
- */
 
+//Acción que hace que el agente siga a la cantante, cuando la alcanza devuelve Success
 public class GhostChaseAction : Action
 {
     NavMeshAgent agent;
@@ -30,9 +28,11 @@ public class GhostChaseAction : Action
 
     public override TaskStatus OnUpdate()
     {
+        //El agente se dirige hacia la cantante
         agent.SetDestination(singer.transform.position);
         if (Vector3.SqrMagnitude(singer.transform.position - this.transform.position) < 1.5f)
         {
+            //La captura
             singer.GetComponent<Cantante>().setCapturada(true, true);
             return TaskStatus.Success;
         }

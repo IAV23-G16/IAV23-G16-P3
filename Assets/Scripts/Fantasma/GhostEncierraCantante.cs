@@ -4,6 +4,8 @@ using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 using UnityEngine.AI;
 
+//Acción que hace que el agente encierre a la cantante, cuando la encierra devuelve Success
+
 public class GhostEncierraCantante : Action
 {
     NavMeshAgent agent;
@@ -19,8 +21,10 @@ public class GhostEncierraCantante : Action
 
     public override TaskStatus OnUpdate()
     {
+        //El agente se dirige hacia la prisión
         if (agent.enabled)
             agent.SetDestination(prison.transform.position);
+        //Entonces la cantante deja de estar capturada y pasa a estar encerrada
         if (Vector3.SqrMagnitude(transform.position - prison.transform.position) < 1.5f)
         {
             agent.SetDestination(transform.position);
