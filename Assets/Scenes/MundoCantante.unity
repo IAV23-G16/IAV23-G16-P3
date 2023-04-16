@@ -15954,7 +15954,7 @@ MonoBehaviour:
   - {fileID: 984640642}
   imprisoned: 0
   palancaCelda: {fileID: 179926306}
-  hited: 0
+  hit: 0
   gate: 0
 --- !u!4 &2002151601
 Transform:
@@ -16708,6 +16708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -16979,7 +16980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda1dafb473ee2d47acfd3301f82447c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoDeCanto: 15
+  tiempoDeCanto: 35
   tiempoDeDescanso: 5
   capturada: 0
   anguloVistaHorizontal: 93.4800033569336
@@ -17027,22 +17028,28 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(427.249969,-888.24884)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-4.98667336,119.614342)"},"ID":1,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1041.54651,129.972885)"},"ID":2,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"PianoCondition","NodeData":{"Offset":"(-368.3638,118.97789)"},"ID":3,"Name":"Piano
-        Condition","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-201.781555,148.030182)"},"ID":4,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-104.89312,123.971581)"},"ID":5,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CapturadaCondition","NodeData":{"Offset":"(-119.990234,131.011017)"},"ID":6,"Name":"Capturada
-        Condition","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(39.62982,127.037048)"},"ID":7,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"GhostReturnAction","NodeData":{"Offset":"(-13.4515076,148.774185)"},"ID":8,"Name":"Ghost
-        Return Action","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(157.727081,144.469711)"},"ID":9,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(10.5131912,153.589447)"},"ID":10,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":5},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"GhostArreglaPianoAction","NodeData":{"Offset":"(180.7329,144.196259)"},"ID":11,"Name":"Ghost
-        Arregla Piano Action","Instant":true}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(362.7925,207.2378)"},"ID":12,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"CantanteCondition","NodeData":{"Offset":"(-496.368164,145.657837)"},"ID":13,"Name":"Cantante
-        Condition","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-281.119171,148.953583)"},"ID":14,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-224.632,150.036423)"},"ID":15,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"PublicoCondition","NodeData":{"Offset":"(-94.98758,132.802216)"},"ID":16,"Name":"Publico
-        Condition","Instant":true},{"Type":"GhostPalanca","NodeData":{"Offset":"(89.79503,132.802246)"},"ID":17,"Name":"Ghost
-        Palanca","Instant":true}]},{"Type":"GhostChaseAction","NodeData":{"Offset":"(86.74121,142.828751)"},"ID":18,"Name":"Ghost
-        Chase Action","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(226.6665,139.999878)"},"ID":19,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"GhostSearchStageAction","NodeData":{"Offset":"(-209.251129,153.961334)"},"ID":20,"Name":"Ghost
-        Search Stage Action","Instant":true},{"Type":"GhostChaseAction","NodeData":{"Offset":"(-1.947712,162.124863)"},"ID":21,"Name":"Ghost
-        Chase Action","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(190.4666,155.2875)"},"ID":22,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-80.69704,121.984314)"},"ID":23,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"GhostLlevarCantante","NodeData":{"Offset":"(-148.31604,128.602615)"},"ID":24,"Name":"Ghost
-        Llevar Cantante","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(4.55249,131.518173)"},"ID":25,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"DoorCondition","NodeData":{"Offset":"(-77.08032,144.375336)"},"ID":26,"Name":"Door
-        Condition","Instant":true},{"Type":"GhostCloseDoorAction","NodeData":{"Offset":"(65.7771,144.375366)"},"ID":27,"Name":"Ghost
-        Close Door Action","Instant":true}]},{"Type":"GhostEncierraCantante","NodeData":{"Offset":"(146.389526,128.457031)"},"ID":28,"Name":"Ghost
-        Encierra Cantante","Instant":true},{"Type":"GhostCloseDoorAction","NodeData":{"Offset":"(319.8591,128.457031)"},"ID":29,"Name":"Ghost
-        Close Door Action","Instant":true}]}]}]}]}]}}'
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(427.249969,-888.24884)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(6.49979,129.396942)"},"ID":1,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1986.0249,101.594307)"},"ID":2,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"VizcondeChocaCondition","NodeData":{"Offset":"(-318.022217,142.926727)"},"ID":3,"Name":"Vizconde
+        Choca Condition","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-123.089256,138.265656)"},"ID":4,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-91.88356,142.217987)"},"ID":5,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CapturadaCondition","NodeData":{"Offset":"(-83.83276,118.77417)"},"ID":6,"Name":"Capturada
+        Condition","Instant":true},{"Type":"GhostLeavesSingerAction","NodeData":{"Offset":"(94.64211,123.845757)"},"ID":7,"Name":"Ghost
+        Leaves Singer Action","Instant":true}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(52.54523,138.536621)"},"ID":8,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1454.58777,119.103317)"},"ID":9,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"PianoCondition","NodeData":{"Offset":"(-330.8638,118.97789)"},"ID":10,"Name":"Piano
+        Condition","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-201.781555,115.421478)"},"ID":11,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-94.02356,123.971581)"},"ID":12,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CapturadaCondition","NodeData":{"Offset":"(-76.51196,131.011017)"},"ID":13,"Name":"Capturada
+        Condition","Instant":true},{"Type":"GhostLeavesSingerAction","NodeData":{"Offset":"(94.46985,131.6279)"},"ID":14,"Name":"Ghost
+        Leaves Singer Action","Instant":true}]}]},{"Type":"GhostReturnAction","NodeData":{"Offset":"(-13.4515076,116.8593)"},"ID":15,"Name":"Ghost
+        Return Action","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(157.727081,123.193123)"},"ID":16,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(10.5131912,142.951157)"},"ID":17,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":5},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"GhostArreglaPianoAction","NodeData":{"Offset":"(180.7329,144.196259)"},"ID":18,"Name":"Ghost
+        Arregla Piano Action","Instant":true}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-261.5202,116.197693)"},"ID":19,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"BrokenPianoCondition","NodeData":{"Offset":"(-646.557739,152.4781)"},"ID":20,"Name":"Broken
+        Piano Condition","Instant":true},{"Type":"CantanteCondition","NodeData":{"Offset":"(-472.0108,148.0918)"},"ID":21,"Name":"Cantante
+        Condition","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-332.401154,148.6162)"},"ID":22,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-85.09718,115.15271)"},"ID":23,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"PublicoCondition","NodeData":{"Offset":"(-94.98758,121.174309)"},"ID":24,"Name":"Publico
+        Condition","Instant":true},{"Type":"GhostPalanca","NodeData":{"Offset":"(89.79503,121.174339)"},"ID":25,"Name":"Ghost
+        Palanca","Instant":true}]},{"Type":"GhostChaseAction","NodeData":{"Offset":"(86.74121,119.572945)"},"ID":26,"Name":"Ghost
+        Chase Action","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(111.281906,139.999878)"},"ID":27,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"GhostSearchStageAction","NodeData":{"Offset":"(-172.665787,130.705536)"},"ID":28,"Name":"Ghost
+        Search Stage Action","Instant":true},{"Type":"GhostChaseAction","NodeData":{"Offset":"(-1.947712,127.241158)"},"ID":29,"Name":"Ghost
+        Chase Action","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(141.686142,132.031708)"},"ID":30,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0.69830513,121.984314)"},"ID":31,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"GhostLlevarCantante","NodeData":{"Offset":"(-148.31604,128.602615)"},"ID":32,"Name":"Ghost
+        Llevar Cantante","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(4.55249,131.518173)"},"ID":33,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"DoorCondition","NodeData":{"Offset":"(-77.08032,144.375336)"},"ID":34,"Name":"Door
+        Condition","Instant":true},{"Type":"GhostCloseDoorAction","NodeData":{"Offset":"(65.7771,144.375366)"},"ID":35,"Name":"Ghost
+        Close Door Action","Instant":true}]},{"Type":"GhostEncierraCantante","NodeData":{"Offset":"(146.389526,128.457031)"},"ID":36,"Name":"Ghost
+        Encierra Cantante","Instant":true},{"Type":"GhostCloseDoorAction","NodeData":{"Offset":"(319.8591,128.457031)"},"ID":37,"Name":"Ghost
+        Close Door Action","Instant":true}]}]}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(427.841583,175.278046)"},"ID":38,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"GhostReturnAction","NodeData":{"Offset":"(-56.70045,110.267868)"},"ID":39,"Name":"Ghost
+        Return Action","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(72.727066,107.727173)"},"ID":40,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":5},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]}]}}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
@@ -17094,7 +17101,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 12
+  m_Speed: 10
   m_Acceleration: 600
   avoidancePriority: 50
   m_AngularSpeed: 1200

@@ -129,75 +129,34 @@ public class Cantante : MonoBehaviour
     // Comprueba si esta en un sitio desde el cual sabe llegar al escenario
     public bool ConozcoEsteSitio()
     {
-        NavMeshHit navHit;
-        NavMesh.SamplePosition(transform.position, out navHit, 2f, NavMesh.AllAreas);
-
-        // Comprueba para todos los lugares desde los que hay camino
-        return (1 << NavMesh.GetAreaFromName("Escenario") & navHit.mask) != 0 ||
-            (1 << NavMesh.GetAreaFromName("Bambalinas") & navHit.mask) != 0 ||
-            (1 << NavMesh.GetAreaFromName("Palco Oeste") & navHit.mask) != 0 ||
-            (1 << NavMesh.GetAreaFromName("Palco Este") & navHit.mask) != 0 ||
-            (1 << NavMesh.GetAreaFromName("Butacas") & navHit.mask) != 0 ||
-            (1 << NavMesh.GetAreaFromName("Pasillos Escenario") & navHit.mask) != 0;
-    }
-
-    //Mira si ve al vizconde con un angulo de vision y una distancia maxima
-    public bool Scan()
-    {
-        double forward = Vector3.Angle(transform.forward, objetivo.position - transform.position);
-
-        if (forward < anguloVistaHorizontal && Vector3.Magnitude(transform.position - objetivo.position) <= distanciaVista)
-        {
-            // Raycast de visión
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, objetivo.position - transform.position, out hit, Mathf.Infinity) && hit.collider.gameObject.GetComponent<Player>())
-            {
-                return true;
-            };
-        }
-        return false;
+        NavMeshPath path = new NavMeshPath();
+        agente.CalculatePath(Escenario.position, path);
+        return path.status == NavMeshPathStatus.PathComplete;
     }
 
     // Genera una posicion aleatoria a cierta distancia dentro de las areas permitidas
-    private Vector3 RandomNavSphere(float dist)
+    private Vector3 RandomNavSphere(float distance)
     {
-        Vector3 randomDir;
-        NavMeshHit navHit;
-        do
-        {
-            randomDir = UnityEngine.Random.insideUnitSphere * dist;
-            randomDir += gameObject.transform.position;
-            NavMesh.SamplePosition(randomDir, out navHit, dist, NavMesh.AllAreas);
+        Vector3 randomDirection = Random.insideUnitSphere * distance;
+        randomDirection += transform.position;
 
-        } while ((1 << NavMesh.GetAreaFromName("Escenario") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Bambalinas") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Palco Oeste") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Palco Este") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Butacas") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Walkable") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Jump") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Vestíbulo") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Sótano Este") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Sótano Oeste") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Celda") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Sótano Norte") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Música") & navHit.mask) == 0 &&
-            (1 << NavMesh.GetAreaFromName("Pasillos Escenario") & navHit.mask) == 0);
+        NavMeshHit hit;
+        Vector3 finalPosition = Vector3.zero;
 
-        return navHit.position;
+        if (NavMesh.SamplePosition(randomDirection, out hit, distance, 1))
+            finalPosition = hit.position;
+
+        return finalPosition;
     }
 
     // Genera un nuevo punto de merodeo cada vez que agota su tiempo de merodeo actual
     public void IntentaMerodear()
     {
-        if ((transform.position - agente.destination).magnitude <= 0.1 + agente.stoppingDistance)
+        if (tiempoComienzoMerodeo + tiempoDeMerodeo < Time.time)
         {
-            tiempoComienzoMerodeo -= Time.deltaTime;
-            if (tiempoComienzoMerodeo <= 0)
-            {
-                tiempoComienzoMerodeo = tiempoDeMerodeo;
+            tiempoComienzoMerodeo = Time.time;
+            if (agente.enabled)
                 agente.SetDestination(RandomNavSphere(distanciaDeMerodeo));
-            }
         }
     }
     public bool GetCapturada()

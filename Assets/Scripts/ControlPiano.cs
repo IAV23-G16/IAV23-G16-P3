@@ -23,7 +23,7 @@ public class ControlPiano : MonoBehaviour
     public bool tocadoDaOtro = false;
 
     [SerializeField] int numToques = 0;
-    [SerializeField] int maxToques = 3;
+    [SerializeField] int maxToques = 1;
 
     private AudioSource myAudioSource;
     public AudioClip[] audioClips;

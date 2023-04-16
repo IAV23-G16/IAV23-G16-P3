@@ -30,7 +30,7 @@ public class GhostArreglaPianoAction : Action
     public override TaskStatus OnUpdate()
     {
         agent.SetDestination(piano.transform.position);
-        if (pianoControl.roto)
+        if (pianoControl.roto && transform.position.x - piano.transform.position.x < 2f && transform.position.z - piano.transform.position.z < 2f)
         {
             pianoControl.ArreglaPiano();
             return TaskStatus.Success;

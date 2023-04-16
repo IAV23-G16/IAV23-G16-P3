@@ -46,7 +46,7 @@ public class GameBlackboard : MonoBehaviour
     public bool isGhostInSotano { get; set; }
 
     public bool pianoed { get { return piano.GetComponent<ControlPiano>().tocado; } }
-    public bool hited;
+    public bool hit;
 
     //public bool gate { get; set; }
     public bool gate = false; //gate close -> false
@@ -55,7 +55,7 @@ public class GameBlackboard : MonoBehaviour
     {
         imprisoned = false;
         gate = false;
-        hited = false;
+        hit = false;
     }
 
     private void Update()

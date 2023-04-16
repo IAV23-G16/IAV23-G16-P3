@@ -20,22 +20,38 @@ using UnityEngine.AI;
 
 public class VizcondeChocaCondition : Conditional
 {
-    GameObject Vizconde;
     NavMeshAgent agent;
-
-    CapsuleCollider cc;
-    bool golpeado = false;
+    GameBlackboard blackboard;
+    GameObject vizconde;
+    GameObject cantante;
 
     public override void OnAwake()
     {
-        // IMPLEMENTAR 
+        agent = GetComponent<NavMeshAgent>();
+        blackboard = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>();
+        vizconde = blackboard.player;
+        cantante = blackboard.singer;
+    }
 
+    public override void OnTriggerEnter(Collider other)
+    {
+        if (other == vizconde.GetComponent<Player>().areaAtaque.GetComponent<BoxCollider>())
+        {
+            blackboard.hit = true;
+            cantante.GetComponent<Cantante>().setCapturada(false, false);
+            cantante.GetComponent<NavMeshAgent>().enabled = true;
+            //cantante.GetComponent<Cantante>().setCapturada(false, false);
+        }
+        else
+            blackboard.hit = false;
     }
 
     public override TaskStatus OnUpdate()
     {
-        // IMPLEMENTAR
-        return TaskStatus.Success;
+        if (blackboard.hit)
+            return TaskStatus.Success;
+        else
+            return TaskStatus.Failure;
 
     }
 
