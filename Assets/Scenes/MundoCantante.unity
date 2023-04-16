@@ -12642,10 +12642,10 @@ RectTransform:
   m_Father: {fileID: 386026116}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.2}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.300003, y: 0}
-  m_SizeDelta: {x: -8.599998, y: -1.9999962}
+  m_AnchoredPosition: {x: 3.300003, y: -15}
+  m_SizeDelta: {x: -8.599998, y: 28.000004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430622083
 MonoBehaviour:
@@ -12669,10 +12669,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -12680,8 +12680,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Movimiento con el clic del rat\xF3n\nC\xE1maras 1, 2, 3 y 4\nQ para capturar
-    cantante\nE para usar palancas\nEspacio para golpear"
+  m_Text: "G16 Pablo Arredondo Nowak & Mario Miguel Cuartero\nMovimiento con el clic
+    del rat\xF3n\nC\xE1maras 1, 2, 3 y 4\nClick derecho para controlar palancas\natacar
+    y capturar"
 --- !u!222 &1430622084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16980,8 +16981,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda1dafb473ee2d47acfd3301f82447c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoDeCanto: 35
-  tiempoDeDescanso: 5
+  tiempoDeCanto: 10
+  tiempoDeDescanso: 3
   capturada: 0
   anguloVistaHorizontal: 93.4800033569336
   distanciaVista: 8
@@ -17101,7 +17102,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 10
+  m_Speed: 5
   m_Acceleration: 600
   avoidancePriority: 50
   m_AngularSpeed: 1200

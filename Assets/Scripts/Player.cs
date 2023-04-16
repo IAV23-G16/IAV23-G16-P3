@@ -47,10 +47,12 @@ public class Player : MonoBehaviour
         if (anim.GetBool("Attack"))
             anim.SetBool("Attack", false);
         //realiza la accion "usar" (para arreglas luces y tocar piano)
-        if (Input.GetKeyDown(KeyCode.E) && ultimaAccion <=0)
+        if (Input.GetMouseButtonDown(1) && ultimaAccion <= 0)
         {
             ultimaAccion = tiempoEsperaAccion;
             areaAccion.SetActive(true);
+            areaAtaque.SetActive(true);
+            areaCaptura.SetActive(true);
             anim.SetBool("Usable", true);
         }
         else if (ultimaAccion > 0)
@@ -61,41 +63,9 @@ public class Player : MonoBehaviour
         if (ultimaAccion < tiempoAccionActiva && areaAccion.activeSelf)
         {
             areaAccion.SetActive(false);
-            anim.SetBool("Attack", false);
-        }
-        //realiza la accion "atacar" (para atacar al fantasma)
-        if (Input.GetKeyDown(KeyCode.Space) && ultimoAtaque <=0)
-        {
-            ultimoAtaque = tiempoEsperaAtaque;
-            areaAtaque.SetActive(true);
-            anim.SetBool("Attack",true);
-        }//reduce el tiempo hasta que puede volver a atacar
-        else if (ultimoAtaque > 0)
-        {
-            ultimoAtaque -= Time.deltaTime;
-
-        }//desactiva el area de ataque
-        if (ultimoAtaque < tiempoAtaqueActivo && areaAtaque.activeSelf)
-        {
             areaAtaque.SetActive(false);
-            anim.SetBool("Attack", false);
-        }
-        //realiza la acción de captura
-        if (Input.GetKeyDown(KeyCode.Q) && ultimaAccion <= 0)
-        {
-            ultimaAccion = tiempoEsperaAccion;
-            areaCaptura.SetActive(true);
-            anim.SetBool("Usable", true);
-        }
-        else if (ultimaAccion > 0)
-        {
-            ultimaAccion -= Time.deltaTime;
-
-        }
-        if (ultimaAccion < tiempoAccionActiva && areaCaptura.activeSelf)
-        {
             areaCaptura.SetActive(false);
-            anim.SetBool("Attack", false);
+            anim.SetBool("Usable", false);
         }
         anim.SetFloat("Speed", GetComponent<NavMeshAgent>().velocity.magnitude);
 
@@ -103,5 +73,58 @@ public class Player : MonoBehaviour
         {
             cantantePruebas.GetComponent<Cantante>().setCapturada(true, false);
         }
+        //    if (Input.GetKeyDown(KeyCode.E) && ultimaAccion <=0)
+        //{
+        //    ultimaAccion = tiempoEsperaAccion;
+        //    areaAccion.SetActive(true);
+        //    anim.SetBool("Usable", true);
+        //}
+        //else if (ultimaAccion > 0)
+        //{
+        //    ultimaAccion -= Time.deltaTime;
+
+        //}
+        //if (ultimaAccion < tiempoAccionActiva && areaAccion.activeSelf)
+        //{
+        //    areaAccion.SetActive(false);
+        //    anim.SetBool("Attack", false);
+        //}
+        ////realiza la accion "atacar" (para atacar al fantasma)
+        //if (Input.GetKeyDown(KeyCode.Space) && ultimoAtaque <=0)
+        //{
+        //    ultimoAtaque = tiempoEsperaAtaque;
+        //    areaAtaque.SetActive(true);
+        //    anim.SetBool("Attack",true);
+        //}//reduce el tiempo hasta que puede volver a atacar
+        //else if (ultimoAtaque > 0)
+        //{
+        //    ultimoAtaque -= Time.deltaTime;
+
+        //}//desactiva el area de ataque
+        //if (ultimoAtaque < tiempoAtaqueActivo && areaAtaque.activeSelf)
+        //{
+        //    areaAtaque.SetActive(false);
+        //    anim.SetBool("Attack", false);
+        //}
+        ////realiza la acción de captura
+        //if (Input.GetKeyDown(KeyCode.Q) && ultimaAccion <= 0)
+        //{
+        //    ultimaAccion = tiempoEsperaAccion;
+        //    areaCaptura.SetActive(true);
+        //    anim.SetBool("Usable", true);
+        //}
+        //else if (ultimaAccion > 0)
+        //{
+        //    ultimaAccion -= Time.deltaTime;
+
+        //}
+        //if (ultimaAccion < tiempoAccionActiva && areaCaptura.activeSelf)
+        //{
+        //    areaCaptura.SetActive(false);
+        //    anim.SetBool("Attack", false);
+        //}
+        //anim.SetFloat("Speed", GetComponent<NavMeshAgent>().velocity.magnitude);
+
+
     }
 }
