@@ -35,7 +35,7 @@ En esta escena se encuentran:
 
 ## Diseño de la solución
 
-Lo que vamos a realizar para resolver esta práctica es...
+El diágrama del **árbol de comportamiento** del **fantasma** tendría esta estructura
 
 ```mermaid
   graph TD;
@@ -60,7 +60,7 @@ Lo que vamos a realizar para resolver esta práctica es...
       
       
 ```
-
+El diágrama de la **máquina de estados** de la **cantante** tendría esta estructura
 
 ```mermaid
   graph TD;
@@ -74,6 +74,7 @@ Lo que vamos a realizar para resolver esta práctica es...
       C[Capturada]-->E[En celda];
       E[En celda]-->D[Perdida];
 ```
+El diágrama del comportamiento del **público** sería así
 
 ```mermaid
   graph TD;
@@ -88,11 +89,28 @@ Lo que vamos a realizar para resolver esta práctica es...
 
 - [Vídeo con la batería de pruebas]
 
-## Ampliaciones
-
-Se han realizado las siguientes ampliaciones.
-
 ## Producción
 
 Las tareas se han realizado y el esfuerzo ha sido repartido entre los autores.
 
+| Estado | Tarea | Fecha |
+| :----: | :---: | :---: |
+| ✔  | ReadMe: Propuesta | 23-03-2023 |
+| ✔  | ReadMe: Punto de partida | 23-03-2023 |
+| ✔  | Primeros scripts fantasma | 02-04-2023 |
+| ✔  | Público y piano scripts | 02-04-2023 |
+| ✔  | GhostTreeBehaviour inicial | 11-04-2023 |
+| ✔  | SingerStateMachine inicial | 13-04-2023 |
+| ✔  | Característica C: Cantando y Descansando | 13-04-2023 |
+| ✔  | Característica D: Fantasma activa palancas lámparas | 15-04-2023 |
+| ✔  | Característica B: Comportamiento público | 15-04-2023 |
+| ✔  | Característica D: Fantasma secuestra a cantante | 15-04-2023 |
+| ✔  | Característica D: Fantasma encierra a cantante | 15-04-2023 |
+| ✔  | Característica C: Cantante sigue a fantasma | 15-04-2023 |
+| ✔  | ReadMe: Diagramas | 16-04-2023 |
+| ✔  | Característica C: Cantante sigue a vizconde | 16-04-2023 |
+| ✔  | Característica D: Fantasma hace su ciclo | 16-04-2023 |
+| ✔  | Característica D: Cantante hace su ciclo | 16-04-2023 |
+| ✔  | Código: comentarios | 16-04-2023 |
+| ✔  | ReadMe: FIN | 16-04-2023 |
+| ✔  | Ejecutable y vídeo | 16-04-2023 |
