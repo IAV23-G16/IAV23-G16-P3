@@ -87,7 +87,7 @@ El diágrama del comportamiento del **público** sería así
 
 ## Pruebas y métricas
 
-- [Vídeo con la batería de pruebas]
+- [Vídeo con la batería de pruebas](https://www.youtube.com/watch?v=Qzz731LoPtc)
 
 ## Producción
 
