@@ -22,20 +22,22 @@ public class GhostCloseDoorAction : Action
     NavMeshAgent agent;
     GameBlackboard blackboard;
     GameObject puerta;
+    [SerializeField] PalancaPuerta palanca;
 
     public override void OnAwake()
     {
         agent = GetComponent<NavMeshAgent>();
         blackboard = GameObject.FindGameObjectWithTag("Blackboard").GetComponent<GameBlackboard>();
         puerta = blackboard.puerta;
+        palanca = blackboard.palancaCelda;
     }
 
     public override TaskStatus OnUpdate()
     {
         agent.SetDestination(puerta.transform.position);
-        blackboard.gate = true;
         if (Vector3.SqrMagnitude(transform.position - puerta.transform.position) < 1.5f)
         {
+            // palanca.Interact();
             //agent.SetDestination(transform.position);
             return TaskStatus.Success;
         }

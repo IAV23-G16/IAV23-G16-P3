@@ -2243,7 +2243,7 @@ MonoBehaviour:
   Blackboard: {fileID: 2002151600}
   gate: {fileID: 1691491724}
   step: 0.2
-  altura: 5.8
+  altura: 5
 --- !u!65 &179926307
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9693,6 +9693,7 @@ GameObject:
   - component: {fileID: 1186746934}
   - component: {fileID: 1186746936}
   - component: {fileID: 1186746937}
+  - component: {fileID: 1186746938}
   m_Layer: 0
   m_Name: AreaCaptura
   m_TagString: Untagged
@@ -9744,6 +9745,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1186746938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186746933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae9547a3bb41bd748b7e726a0aa2d1be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1187654221
 GameObject:
   m_ObjectHideFlags: 0
@@ -15940,6 +15953,7 @@ MonoBehaviour:
   - {fileID: 1137905981}
   - {fileID: 984640642}
   imprisoned: 0
+  palancaCelda: {fileID: 179926306}
   hited: 0
   gate: 0
 --- !u!4 &2002151601
@@ -16694,7 +16708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit

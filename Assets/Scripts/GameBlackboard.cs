@@ -41,6 +41,8 @@ public class GameBlackboard : MonoBehaviour
     public GameObject[] randomSitios;
     public bool imprisoned = false;
 
+    public PalancaPuerta palancaCelda;
+
     public bool isGhostInSotano { get; set; }
 
     public bool pianoed { get { return piano.GetComponent<ControlPiano>().tocado; } }

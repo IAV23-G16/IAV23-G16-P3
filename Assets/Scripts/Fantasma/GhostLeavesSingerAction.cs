@@ -16,7 +16,7 @@ public class GhostLeavesSingerAction : Action
     public override TaskStatus OnUpdate()
     {
         cantante.transform.SetParent(null);
-        blackboard.singer.GetComponent<Cantante>().setCapturada(false, false);
+        cantante.GetComponent<Cantante>().setCapturada(false, false);
         return TaskStatus.Success;
     }
 }
