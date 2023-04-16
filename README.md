@@ -33,6 +33,57 @@ En esta escena se encuentran:
 - **Palancas y piano**, que permiten ser controladas y usadas.
 - **“Canvas”**, que una vez ha comenzado el juego muestra por pantalla información sobre el movimiento; el control de cámaras; e información del input de teclado.
 
+## Diseño de la solución
+
+Lo que vamos a realizar para resolver esta práctica es...
+
+```mermaid
+  graph TD;
+      A[Toca piano]-->B[Escucha cantar];
+      B[Escucha cantar]-->C[Busca cantante por el mapa];
+      C[Busca cantante por el mapa]-->D[está en el escenario?];
+      C[Busca cantante por el mapa]-->J[Si escucha golpes en el piano];
+      J[Si escucha golpes en el piano]-->K[Lleva cantante?];
+      K-- Sí --> H[Suelta cantante];
+      K-- No --> L[Vuelve a la sala de música];
+      H[Suelta cantante]-->L[Vuelve a la sala de música];
+      L[Vuelve a la sala de música]-->M[Arregla piano];
+      M[Arregla piano]-->A[Toca piano];
+      D[está en el escenario?]-->E[Tira lámparas];
+      E[Tira lámparas]-->F[Captura cantante];
+      F[Captura cantante]-->G[choca con vizconde?];
+      G-- Sí -->H[Suelta cantante];
+      G-- No -->I[Encierra en celda];
+      H[Suelta cantante]-->A[Toca piano];
+      I[Encierra en celda]-->A[Toca piano];
+      
+      
+      
+```
+
+
+```mermaid
+  graph TD;
+      A[Cantando]-->B[Descansando];
+      B[Descansando]-->A[Cantando];
+      A[Cantando]-->C[Capturada];
+      B[Descansando]-->C[Capturada];
+      C[Capturada]-->D[Perdida];
+      D[Perdida]-->C[Capturada];
+      D[Perdida]-->A[Cantando];
+      C[Capturada]-->E[En celda];
+      E[En celda]-->D[Perdida];
+```
+
+```mermaid
+  graph TD;
+      A[Mirar Cantante]-->B[Lámpara cae];
+      B[Lámpara cae]-->D[Huyen al vestíbulo];
+      D[Huyen al vestíbulo]-->E[Lámpara asciende];       
+      E[Lámpara asciende]-->F[Vuelven a las butacas];
+      F[Vuelven a las butacas]-->A[Mirar Cantante]
+```
+
 ## Pruebas y métricas
 
 - [Vídeo con la batería de pruebas]
